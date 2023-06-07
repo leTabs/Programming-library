@@ -14,4 +14,4 @@ VALUES
 (2, 'Tony', 24, 'England'),
 (3, 'Marry', 26, 'Norway'),
 (4, 'Mark', 24, 'Norway'),
-(5, 'Bony', 32, 'France')
+(5, 'Bony', 32, NULL)
