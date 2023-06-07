@@ -15,3 +15,21 @@ VALUES
 (3, 'Marry', 26, 'Norway'),
 (4, 'Mark', 24, 'Norway'),
 (5, 'Bony', 32, NULL)
+
+
+DROP TABLE Orders;
+
+CREATE TABLE Orders 
+(order_id INT PRIMARY KEY, 
+ item VARCHAR(20), 
+ price INT,
+ customer_id INT);
+
+INSERT INTO Orders(order_id, item, price, customer_id)
+VALUES
+(1, 'book', 20, 2),
+(2, 'bag', 35, 4),
+(3, 'book', 15, 3),
+(4, 'paper', 4, 1),
+(5, 'notebook',2, 5 )
+
