@@ -34,9 +34,16 @@ VALUES
 (5, 'notebook',2, 5 );
 
 DROP TABLE Shippings;
-CREATE TABLE Shipments 
-(shipment_id PRIMARY KEY, 
+CREATE TABLE Shippings
+(shipping_id PRIMARY KEY, 
  status VARCHAR(9), 
  order_id INT
-)
+);
 
+INSERT INTO Shippings(shipping_id, status, order_id)
+VALUES
+(1, 'pending', 3),
+(2, 'delivered',4),
+(3, 'delivered',1),
+(4, 'pending',2),
+(5, 'pending', NULL)
