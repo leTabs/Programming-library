@@ -33,3 +33,10 @@ VALUES
 (4, 'paper', 4, 1),
 (5, 'notebook',2, 5 );
 
+DROP TABLE Shippings;
+CREATE TABLE Shipments 
+(shipment_id PRIMARY KEY, 
+ status VARCHAR(9), 
+ order_id INT
+)
+
