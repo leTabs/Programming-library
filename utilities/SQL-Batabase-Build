@@ -1,1 +1,18 @@
 
+DROP TABLE Customers;
+
+CREATE TABLE customers (
+    customer_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    age INT,
+    location VARCHAR(100)
+);
+
+
+INSERT INTO Customers (customer_id, first_name, age, location)
+VALUES
+(1, 'John', 30, 'USA'),
+(2, 'Tony', 24, 'England'),
+(3, 'Marry', 26, 'Norway'),
+(4, 'Mark', 24, 'Norway'),
+(5, 'Bony', 32, 'France')
