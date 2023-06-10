@@ -1,6 +1,16 @@
 /* Make root variables format it better */
+:root{
+    --main-text-clr: white;
+    --cyan-blue: cyan ;
+    --high-pink: rgb(249, 5, 151);
+    --pink: rgb(219, 153, 213);
+    --purple:rgb(198, 82, 252);
+    --dark-blue:rgb(0, 52, 81) ;
+    --navbar-background: linear-gradient(90deg, #28d0d2, #a40f90);
+    --background: ;
+
+}
 html{
-    background: rgb(236, 224, 224);
     background: linear-gradient(90deg , #032b43, #610253);
 }
 html *{
@@ -21,12 +31,11 @@ html *{
     background: #3ba2e7;
   }
 nav{
-    background: linear-gradient(90deg, #28d0d2, #a40f90);
-    /* color: white; */
+    background: var(--navbar-background);
     height: 3.5rem;
     display: flex;
     justify-content: space-between;
-    border-bottom: rgb(167, 5, 249) solid 1px;
+    border-bottom: solid 1px var(--high-pink);
     box-shadow: 13px 3px 43px 8px black;
     font-weight: bold;
 } 
@@ -39,21 +48,19 @@ nav div{
 }
 main{
     display: grid;
-    border: solid rgb(0, 114, 126) 1px;
+    border: solid 1px rgb(0, 114, 126);
     grid-template-columns: 1fr 1fr 1fr;
     width: 95vw;
     margin: auto;
-    /* margin-top:5rem ; */
     padding: 0.5rem;
     border-radius: 15px;
     box-shadow: 3px 3px 33px 3px black;
 }
 section{
     text-align: center;
-    border: solid rgb(198, 82, 252) 1px;
-    color: white;
+    border: solid 1px var(--purple);
+    color: var(--main-text-clr);
     margin: 1rem;
-    /* height: 10rem; */
     border-radius: 15px;
     font-size: 1.5rem;
     padding: 1.5rem;
@@ -61,26 +68,25 @@ section{
     transition: 500ms;
 }
 section:hover{
-    border-color: rgb(90, 210, 254);
-    /* background-color: #032f4a; */
+    border-color: var(--cyan-blue);
 }
 button{
-    background-color: rgb(219, 153, 213);
+    background-color: var(--pink);
     font-size: 1.2rem;
     margin:1rem 0 0 0.5rem;
-    border: solid 1px rgb(219, 153, 213);
+    border: solid 1px var(--pink);
     padding: 0.3rem 0.7rem;
     border-radius: 15px;
-    color: rgb(0, 52, 81);
+    color: var(--dark-blue);
     transition: 300ms;
 }
 button:hover{
     background-color: transparent;
-    color: rgb(219, 153, 213);
+    color: var(--pink);
+    cursor: pointer;
 }
 .icon{
     width:1.5rem;
-    /* margin-left:1rem; */
     height: 1.5rem;
     filter: invert(100%);
 }
@@ -88,11 +94,10 @@ button:hover{
     text-align: center;
     margin: 4rem 0;
     font-size: 2.5rem;
-    color: white;
-    /* color: gray; */
+    color: var(--main-text-clr);
 }
 .subject{
-    color: cyan;
+    color: var(--cyan-blue);
     text-align: left;
     font-size: 1.7rem;
     font-weight: bold;
