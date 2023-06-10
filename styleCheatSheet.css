@@ -1,3 +1,4 @@
+/* Make root variables format it better */
 html{
     background: rgb(236, 224, 224);
     background: linear-gradient(90deg , #032b43, #610253);
@@ -7,7 +8,18 @@ html *{
     margin: 0;
     font-family: sans-serif;
 }
-
+::-webkit-scrollbar {
+    width: 5px;
+  }
+::-webkit-scrollbar-track {
+    background:  #7e035d ;
+  }
+::-webkit-scrollbar-thumb {
+    background:  #d323a4;
+  }
+::-webkit-scrollbar-thumb:hover {
+    background: #3ba2e7;
+  }
 nav{
     background: linear-gradient(90deg, #28d0d2, #a40f90);
     /* color: white; */
@@ -50,7 +62,7 @@ section{
 }
 section:hover{
     border-color: rgb(90, 210, 254);
-    background-color: #032f4a;
+    /* background-color: #032f4a; */
 }
 button{
     background-color: rgb(219, 153, 213);
