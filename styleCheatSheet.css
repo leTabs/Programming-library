@@ -39,7 +39,7 @@ nav{
     box-shadow: 13px 3px 43px 8px black;
     font-weight: bold;
 } 
-nav span, nav div{
+nav span, nav div, section{
     margin: 1rem;
     font-size: 1.5rem ;
 }
@@ -54,17 +54,17 @@ main{
     margin: auto;
     padding: 0.5rem;
     border-radius: 15px;
-    box-shadow: 3px 3px 33px 3px black;
+}
+main, section{
+    box-shadow: 13px 3px 25px 3px black;
+    
 }
 section{
     text-align: center;
     border: solid 1px var(--purple);
     color: var(--main-text-clr);
-    margin: 1rem;
     border-radius: 15px;
-    font-size: 1.5rem;
     padding: 1.5rem;
-    box-shadow: 3px 3px 20px 3px black;
     transition: 500ms;
 }
 section:hover{
