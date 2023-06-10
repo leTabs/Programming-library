@@ -1,53 +1,88 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cheat Sheet Library|Home</title>
-    <link href="styleCheatSheet.css" rel="stylesheet" />
-</head>
-<body>
-    <nav>
-        <span>Programming Cheat sheets</span>
-        <div class="icons">
-            <img src="facebook.svg" alt="facebook" class="icon"/>
-            <img src="github.svg"  alt="github" class="icon"/>
-            <img src="linkedin.svg" alt="linkedIn" class="icon"/>
-        </div>
-    </nav>
-    <h2 class="intro">Cheat sheets of programming concepts</h2>
-    <main>
-        <section>
-                <p class="subject">SQL</p>
-                <p>Visit SQL Cheat Sheet</p>
-            <button>download docks</button>
-        </section>
-        <section>
-                <p class="subject">SQL</p>
-                <p>Visit SQL Cheat Sheet</p>
-            <button>download docks</button>
-        </section>
-        <section>
-                <p class="subject">SQL</p>
-                <p>Visit SQL Cheat Sheet</p>
-            <button>download docks</button>
-        </section>
-        <section>
-                <p class="subject">SQL</p>
-                <p>Visit SQL Cheat Sheet</p>
-            <button>download docks</button>
-        </section>
-        <section>
-                <p class="subject">SQL</p>
-                <p>Visit SQL Cheat Sheet</p>
-            <button>download docks</button>
-        </section>
-        <section>
-                <p class="subject">SQL</p>
-                <p>Visit SQL Cheat Sheet</p>
-            <button>download docks</button>
-        </section>
-    </main>
-</body>
-</html>
+html{
+    background: rgb(236, 224, 224);
+    background: linear-gradient(90deg , #032b43, #610253);
+}
+html *{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+nav{
+    background: linear-gradient(90deg, #28d0d2, #a40f90);
+    /* color: white; */
+    height: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: rgb(167, 5, 249) solid 1px;
+    box-shadow: 13px 3px 43px 8px black;
+    font-weight: bold;
+} 
+nav span, nav div{
+    margin: 1rem;
+    font-size: 1.5rem ;
+}
+nav div{
+    margin-right: 3rem;
+}
+main{
+    display: grid;
+    border: solid rgb(0, 114, 126) 1px;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 95vw;
+    margin: auto;
+    /* margin-top:5rem ; */
+    padding: 0.5rem;
+    border-radius: 15px;
+    box-shadow: 3px 3px 33px 3px black;
+}
+section{
+    text-align: center;
+    border: solid rgb(198, 82, 252) 1px;
+    color: white;
+    margin: 1rem;
+    /* height: 10rem; */
+    border-radius: 15px;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    box-shadow: 3px 3px 20px 3px black;
+    transition: 500ms;
+}
+section:hover{
+    border-color: rgb(90, 210, 254);
+    background-color: #032f4a;
+}
+button{
+    background-color: rgb(219, 153, 213);
+    font-size: 1.2rem;
+    margin:1rem 0 0 0.5rem;
+    border: solid 1px rgb(219, 153, 213);
+    padding: 0.3rem 0.7rem;
+    border-radius: 15px;
+    color: rgb(0, 52, 81);
+    transition: 300ms;
+}
+button:hover{
+    background-color: transparent;
+    color: rgb(219, 153, 213);
+}
+.icon{
+    width:1.5rem;
+    /* margin-left:1rem; */
+    height: 1.5rem;
+    filter: invert(100%);
+}
+.intro{
+    text-align: center;
+    margin: 4rem 0;
+    font-size: 2.5rem;
+    color: white;
+    /* color: gray; */
+}
+.subject{
+    color: cyan;
+    text-align: left;
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin:0.5rem
+}
