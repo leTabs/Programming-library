@@ -1,16 +1,22 @@
+html{
+    background: rgb(236, 224, 224);
+    background: linear-gradient(90deg , #032b43, #610253);
+}
 html *{
     padding: 0;
     margin: 0;
     font-family: sans-serif;
 }
+
 nav{
-    background: linear-gradient(90deg, #a33f06, #a40f90);
-    color: white;
+    background: linear-gradient(90deg, #28d0d2, #a40f90);
+    /* color: white; */
     height: 3.5rem;
     display: flex;
     justify-content: space-between;
     border-bottom: rgb(167, 5, 249) solid 1px;
-}
+    box-shadow: 13px 3px 43px 3px black;
+} 
 nav span, nav div{
     margin: 1rem;
     font-size: 1.5rem ;
@@ -20,15 +26,26 @@ nav div{
 }
 main{
     display: grid;
-    border: solid rgb(187, 255, 0) 1px;
+    border: solid rgb(0, 0, 0) 1px;
     grid-template-columns: 1fr 1fr 1fr;
     width: 95vw;
     margin: auto;
-    padding: 0.5rem
+    /* margin-top:5rem ; */
+    padding: 0.5rem;
+    border-radius: 5px;
 }
 section{
-    border: solid red 1px;
-    padding: 1rem
+    text-align: center;
+    border: solid rgb(252, 82, 233) 1px;
+    color: white;
+    margin: 1rem;
+    /* height: 10rem; */
+    border-radius: 5px;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+}
+button{
+    
 }
 img{
     width:1.5rem;
@@ -38,7 +55,15 @@ img{
 }
 .intro{
     text-align: center;
-    margin-top: 2rem;
-    font-size: 2rem;
+    margin: 4rem 0;
+    font-size: 2.2rem;
+    color: white;
     /* color: gray; */
+}
+.subject{
+    color: cyan;
+    text-align: left;
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin:0.5rem
 }
