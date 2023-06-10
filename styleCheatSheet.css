@@ -5,3 +5,7 @@ main{
 section{
     border: solid red 1px
 }
+img{
+    width:1rem;
+    height: 1rem;
+}
