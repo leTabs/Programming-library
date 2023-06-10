@@ -5,6 +5,9 @@ html *{
 nav{
     background: linear-gradient(90deg, #B64F14, #a40f90);
     color: white;
+    height: 3.5rem;
+    display: flex;
+    justify-content: space-between;
 }
 main{
     display: grid;
