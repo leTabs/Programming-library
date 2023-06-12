@@ -2,6 +2,7 @@
 const html = document.querySelector('.html')
 const css = document.querySelector('.css')
 const js = document.querySelector('.js')
+const ts = document.querySelector('.ts')
 const python = document.querySelector('.python')
 const relational = document.querySelector('.relational')
 
@@ -9,6 +10,7 @@ const relational = document.querySelector('.relational')
 html.addEventListener('click', ()=>{window.location = 'html_main.html'})
 css.addEventListener('click', ()=>{window.location = 'css_main.html'})
 js.addEventListener('click', ()=>{window.location = 'js_main.html'})
+ts.addEventListener('click', ()=>{window.location = 'ts_main.html'})
 python.addEventListener('click', ()=>{window.location = 'python_main.html'})
 relational.addEventListener('click', ()=>{window.location = 'sql_main.html'})
 
