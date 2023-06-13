@@ -9,7 +9,9 @@
 </head>
 <body>
     <nav>
-        <span>Python Cheat Sheet</span>
+
+        <span> Python Cheat Sheet</span>
+        <img src="python.svg"/>
     </nav>
     <main>
         <section class="chapters">
