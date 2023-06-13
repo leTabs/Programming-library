@@ -11,6 +11,9 @@ nav{
     display: flex;
     justify-content:flex-start;
 }
+.concept-icon{
+    margin-left: 3rem;
+}
 main{
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -18,19 +21,20 @@ main{
     color: white;
 }
 section{
-    /* border: solid red 1px; */
-    /* margin:1rem; */
     overflow-y: auto;
     height: calc(100vh - 3.5rem);
     padding: 1rem;
-    text-align: center;
+    text-align: left;
 }
-h2{
-    color: greenyellow
-}
+
 h3{
-    color: red
+    color: rgb(255, 255, 255);
+    font-size: 1.6rem;
+    margin:1rem;
 }
-.concept-icon{
-    margin-left: 3rem;
+.chapterNames{
+    font-size: 1.3rem;
+    color: rgb(44, 196, 173);
+    margin: 0.5rem;
+    margin-left: 2rem;
 }
