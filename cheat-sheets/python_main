@@ -9,13 +9,11 @@
 </head>
 <body>
     <nav>
-
+        <img src="python.svg" class="concept-icon"/>
         <span> Python Cheat Sheet</span>
-        <img src="python.svg"/>
     </nav>
     <main>
         <section class="chapters">
-            <h2>Chapter</h2>
             <h3>Introdction</h3>
             <p>Basics</p>
         </section>
@@ -24,4 +22,6 @@
         </section>
     </main>
 </body>
+<script rel="text" src="python_main.js">
+</script>
 </html>
