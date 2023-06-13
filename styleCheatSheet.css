@@ -69,6 +69,7 @@ nav div{
 }
 .concept:hover{
     border-color: var(--cyan-blue);
+    cursor: pointer;
 }
 button{
     background-color: var(--pink);
@@ -83,7 +84,7 @@ button{
 button:hover{
     background-color: transparent;
     color: var(--pink);
-    cursor: pointer;
+    cursor:context-menu;
 }
 .icon{
     width:1.5rem;
@@ -101,5 +102,10 @@ button:hover{
     text-align: left;
     font-size: 1.7rem;
     font-weight: bold;
-    margin:0.5rem
+    margin:0.5rem;
+}
+.concept-img{
+    width: 2rem;
+    height: 2rem;
+    filter:invert(100%);
 }
