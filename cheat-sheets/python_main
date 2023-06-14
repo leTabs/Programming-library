@@ -14,10 +14,9 @@
     </nav>
     <main>
         <section class="chapters">
-            <h3>Intro</h3>
         </section>
-        <section class="context">Introduction of python
-            
+        <section class="context">
+            Will be added later
         </section>
     </main>
 </body>
