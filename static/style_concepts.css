@@ -16,7 +16,7 @@ nav{
 }
 main{
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 0.75fr 3.25fr;
     overflow: hidden;
     color: white;
 }
@@ -29,12 +29,22 @@ section{
 
 h3{
     color: rgb(255, 255, 255);
-    font-size: 1.6rem;
-    margin:1rem;
+    font-size: 1.7rem;
+    margin:0.5rem;
+    /* text-decoration: underline; */
 }
 .chapterNames{
     font-size: 1.3rem;
-    color: rgb(44, 196, 173);
-    margin: 0.5rem;
+    color: rgb(7, 161, 169);
+    margin: 0.7rem 0;
     margin-left: 2rem;
+    transition: 300ms;
+}
+
+.chapterNames:hover{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+hr{
+    width: 90%;
 }
