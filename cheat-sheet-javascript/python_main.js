@@ -7,7 +7,13 @@ context.innerHTML = `
 Python is used for:
 <p>
 <ul>
-    <li>Web</li>
+    <li>Web Developmet</li>
+    <li>Data Analysis and Visualization</li>
+    <li>Machine Learning and AI</li>
+    <li>Command-line applications</li>
+    <li>Game development</li>
+    <li>Networking Programming ,</li>
+    <li>And more…</li>
 </ul>
 `
 chapters.innerHTML += `<h3>Introduction</h3><hr>`
