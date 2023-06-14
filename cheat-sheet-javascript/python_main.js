@@ -1,5 +1,6 @@
-const chapters = document.querySelector('.chapters')
 
+const chapters = document.querySelector('.chapters')
+chapters.innerHTML += `<h3>Introduction</h3>`
 pythonChapters = [
     'Introduction',
     'Basics',
