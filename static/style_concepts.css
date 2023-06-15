@@ -26,25 +26,26 @@ section{
     padding: 1rem;
     text-align: left;
 }
-
 h3{
     color: rgb(255, 255, 255);
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     margin:0.5rem;
+    margin-top: 1.5rem;
     /* text-decoration: underline; */
 }
 .chapterNames{
-    font-size: 1.3rem;
+    font-size: 1.rem;
     color: rgb(7, 161, 169);
-    margin: 0.7rem 0;
-    margin-left: 2rem;
+    margin: 0.7rem 0 0.5rem 2rem;
     transition: 300ms;
 }
-
+.chapterNames:last-child{
+    margin-bottom: 3rem;
+}
 .chapterNames:hover{
     color: rgb(255, 255, 255);
     cursor: pointer;
 }
 hr{
-    width: 90%;
+    width: 80%;
 }
