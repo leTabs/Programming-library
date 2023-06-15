@@ -68,7 +68,7 @@ hr{
     margin: 0.5rem 0 1.5rem 0
 }
 .context h2{
-    text-align: center;
+    text-align: left;
     font-size: 2rem;
     margin:3rem 0 0.5rem 0;
     color: rgb(0, 255, 225);
@@ -84,6 +84,16 @@ hr{
     margin:1rem 0 1.5rem 3rem;
 }
 
+.context table th, .context table td{
+    border: solid rgb(179, 179, 179) 1px;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0.5rem;
+    color: rgb(255, 255, 255);
+}
+.context table th{
+    background-color: rgb(15, 16, 16);
+}
 .next-prev-btn{
     text-align: center;
     margin: 3rem auto 10rem auto;
