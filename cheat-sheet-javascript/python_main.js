@@ -1,23 +1,11 @@
 
 const chapters = document.querySelector('.chapters')
-const context = document.querySelector('.context')
-context.innerHTML = `
-<h1>Introduction</h1>
-<p>Python is high-level programming language. It’s known for its simple syntax, wide variety of uses and as one of the most beginner friendly languages.
-Python is used for:
-<p>
-<ul>
-    <li>Web Developmet</li>
-    <li>Data Analysis and Visualization</li>
-    <li>Machine Learning and AI</li>
-    <li>Command-line applications</li>
-    <li>Game development</li>
-    <li>Networking Programming ,</li>
-    <li>And more…</li>
-</ul>
-`
-chapters.innerHTML += `<h3>Introduction</h3><hr>`
-pythonChapters = [
+// const context = document.querySelector('.context')
+
+// The list of each concept etc.
+chapters.innerHTML += `<h1>Introduction</h1><hr>`
+chapters.innerHTML += `<h3>Basics</h3>`
+basics = [
     'Syntax',
     'Data Types',
     'Variables',
@@ -25,16 +13,18 @@ pythonChapters = [
     'Strings',
     'Basic Functions'
 ]
-for(item in pythonChapters){
-    chapters.innerHTML +=  `<p class="chapterNames chapter${item}">${pythonChapters[item]}</p>`
+for(item in basics){
+    chapters.innerHTML +=  `<p class="chapterNames chapter${item}">${basics[item]}</p>`
 }
 chapters.innerHTML += `<h3>Control flow</h3><hr>` 
-pythonChapters = [
-    'if Statment',
-    'while loop',
-    'for loop',
-    'range()'
+controlFlow = [
+    'if Statments',
+    'Ternary Operator',
+    'while Loop',
+    'for Loop',
+    'break', 
+    'continue'
 ]
-for(item in pythonChapters){
-    chapters.innerHTML +=  `<p class="chapterNames">${pythonChapters[item]}</p>`
+for(item in controlFlow){
+    chapters.innerHTML +=  `<p class="chapterNames">${controlFlow[item]}</p>`
 }
