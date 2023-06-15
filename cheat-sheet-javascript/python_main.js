@@ -1,4 +1,5 @@
 // remeber to change the list color once clicked
+//Make sure to change the html to module and the innerHTML to a function with a variable parameter
 const chapters = document.querySelector('.chapters')
 basics = [
     'Syntax',
@@ -363,5 +364,321 @@ basic2.addEventListener('click', ()=>{
         <button>Previous</button>
         <button>Next</button>
     </div>
+    `
+})
+
+
+const basic3 = document.querySelector('.basic3')
+basic3.addEventListener('click', ()=>{
+    context.innerHTML = `
+    <h1>Operators</h1>
+    <p>Operators are symbols or combinations of symbols that serve a very specific functionality.</p>
+    <h2>Arithmetic Operators</h2>
+    <p>Arithmetic operators: are the operators used to execute addition, subtraction,
+        multiplication, division. Also, to get the remainder of a division and use the
+        mathematical powers.
+    </p>
+    <table>
+        <tr>
+          <th>Operation</th>
+          <th>Sign</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>Addition</td>
+          <td>+</td>
+          <td>Performs addition, also combines the context of values of the same data type.</td>
+        </tr>
+        <tr>
+          <td>Subtraction</td>
+          <td>-</td>
+          <td>Performs subtraction.</td>
+        </tr>
+        <tr>
+          <td>Multiplication</td>
+          <td>*</td>
+          <td>Multiplies numbers and the context of other data types.</td>
+        </tr>
+        <tr>
+          <td>Division</td>
+          <td>/</td>
+          <td>Performs division.</td>
+        </tr>
+        <tr>
+          <td>Floor Division</td>
+          <td>//</td>
+          <td>Performs division and returns the integer (without any decimal points).</td>
+        </tr>
+        <tr>
+          <td>Power</td>
+          <td>**</td>
+          <td>Uses power to numbers.</td>
+        </tr>
+        <tr>
+          <td>Modulus</td>
+          <td>%</td>
+          <td>Returns the remainder of the division of two numbers.</td>
+        </tr>
+      </table>
+    <hr />
+
+    <h2>Assignment operators</h2>
+    <p>Assignment operators: assign values to a variable or a different  python object.</p>
+
+    <table>
+        <tr>
+          <th>Operation</th>
+          <th>Sign</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>Assignment</td>
+          <td>=</td>
+          <td>Assigns a value to a variable name.</td>
+        </tr>
+        <tr>
+          <td>Augmented addition</td>
+          <td>+=</td>
+          <td>Adds the variable with the right operand and assigns the result to the variable.</td>
+        </tr>
+        <tr>
+          <td>Augmented subtraction</td>
+          <td>-=</td>
+          <td>Subtracts the variable with the right operand and assigns the result to the variable.</td>
+        </tr>
+        <tr>
+          <td>Augmented multiplication</td>
+          <td>*=</td>
+          <td>Multiplies the variable with the right operand and assigns the result to the variable.</td>
+        </tr>
+        <tr>
+          <td>Augmented division</td>
+          <td>/=</td>
+          <td>Divides the variable with the right operand and assigns the result to the variable.</td>
+        </tr>
+        <tr>
+          <td>Augmented floor division</td>
+          <td>//=</td>
+          <td>Floor divides the variable with the right operand and assigns the result to the variable.</td>
+        </tr>
+        <tr>
+          <td>Augmented power</td>
+          <td>**=</td>
+          <td>Powers the variable with the right operand and assigns the result to the variable.</td>
+        </tr>
+        <tr>
+          <td>Augmented modulus</td>
+          <td>%=</td>
+          <td>Divides the variable with the right operand and assigns the remainder of the division to the variable.</td>
+        </tr>
+      </table>
+    <hr />              
+    <h2>Comparison Operators</h2>
+    <p>Comparison Operators: compare two values and return “True” or “False”
+        according to the result of the comparison:</p>
+        <table>
+            <tr>
+              <th>Operation</th>
+              <th>Sign</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>Equal to</td>
+              <td>==</td>
+              <td>Returns True if the two values are equal and False otherwise.</td>
+            </tr>
+            <tr>
+              <td>Not Equal to</td>
+              <td>!=</td>
+              <td>Returns True if the two values are not equal and False otherwise.</td>
+            </tr>
+            <tr>
+              <td>Greater than</td>
+              <td>&gt;</td>
+              <td>Returns True if the left value is greater than the right value and False otherwise.</td>
+            </tr>
+            <tr>
+              <td>Less than</td>
+              <td>&lt;</td>
+              <td>Returns True if the left value is smaller than the right value and False otherwise.</td>
+            </tr>
+            <tr>
+              <td>Greater or Equal to</td>
+              <td>&gt;=</td>
+              <td>Returns True if the left value is greater or equal to the right value and False otherwise.</td>
+            </tr>
+            <tr>
+              <td>Less or Equal to</td>
+              <td>&lt;=</td>
+              <td>Returns True if the left value is smaller or equal to the right value and False otherwise.</td>
+            </tr>
+          </table>
+        <hr />                  
+    <h2>Logical Operators</h2>
+    <p>Logical operators: combine or manipulate Boolean values. They help on creating complex conditions 
+        by combining simpler conditions together.</p>
+        <table>
+            <thead>
+              <tr>
+                <th>Operation &amp; Sign</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>and</td>
+                <td>Returns True if both operands are evaluated to True, and False otherwise.</td>
+              </tr>
+              <tr>
+                <td>or</td>
+                <td>Returns True if at least one of the operands is evaluated to True, and False otherwise.</td>
+              </tr>
+              <tr>
+                <td>not</td>
+                <td>Is a unary operator. Returns True if the operand is evaluated to False, and False if the operand is evaluated to True.</td>
+              </tr>
+            </tbody>
+          </table>
+        <hr />
+    
+    <h2>Memebership Operators</h2>
+    <p>Membership Operators: test the membership of a specified value in a sequence of items,
+        such as strings, lists tuples etc.</p>
+        <table>
+            <tr>
+              <th>Operation &amp; Sign</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>in</td>
+              <td>Returns True if the specified value is included in the sequence of interest, and False otherwise.</td>
+            </tr>
+            <tr>
+              <td>not in</td>
+              <td>Returns True if the specified value is not included in the sequence of interest, and False otherwise.</td>
+            </tr>
+          </table>
+        <hr />                  
+    <h2>Identity Operators</h2>
+    <p>Identity Operators: compare the identity of two objects, they determine if two values
+         or objects refer to the same memory location.</p>
+    
+         <!DOCTYPE html>
+         <html>
+         <head>
+           <title>Python Comparison Operators</title>
+         </head>
+         <body>
+           <h1>Python Comparison Operators</h1>
+         
+           <table>
+             <tr>
+               <th>Operation</th>
+               <th>Description</th>
+             </tr>
+             <tr>
+               <td>is</td>
+               <td>Returns True if the two vars or objects refer to the same memory location, and False otherwise.</td>
+             </tr>
+             <tr>
+               <td>is not</td>
+               <td>Returns True if the two vars or objects do not refer to the same memory location, and False otherwise.</td>
+             </tr>
+           </table>
+         
+         </body>
+         </html>
+        <hr />                 
+    <h2>Bitwise Operators</h2>
+    <p>Bitwise Operators: perform operations at a binary level on the individual bits of integers.
+        They manipulate the binary representation of numbers.</p>
+    
+        <table>
+            <tr>
+              <th>Operation</th>
+              <th>Sign</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>AND</td>
+              <td>&amp;</td>
+              <td>Performs AND on each pair of the corresponding bits of the operands. Returns a new integer where each bit is set to 1 if the corresponding bits of both operands are 1. Otherwise, is set to 0.</td>
+            </tr>
+            <tr>
+              <td>OR</td>
+              <td>|</td>
+              <td>Performs OR on each pair of the corresponding bits of the operands. Returns a new integer where each bit is 1 if at least one of the corresponding bits of the operands is 1. Otherwise, is set to 0.</td>
+            </tr>
+            <tr>
+              <td>XOR</td>
+              <td>^</td>
+              <td>Performs an exclusive OR operation on each pair of the corresponding bits of the operands. Returns a new integer where each bit is set to 1 if the corresponding bits of the operands are different. Otherwise, is set to 0.</td>
+            </tr>
+            <tr>
+              <td>NOT</td>
+              <td>~</td>
+              <td>Is a unary operator. Performs a negation operation. It flips each bit of the operand. The result is a new integer where all the bits are inverted.</td>
+            </tr>
+            <tr>
+              <td>Left Shift</td>
+              <td>&lt;&lt;</td>
+              <td>Shifts the bits of the left operand to the left by a specified number of positions. The vacant positions are filled with 0.</td>
+            </tr>
+            <tr>
+              <td>Right Shift</td>
+              <td>&gt;&gt;</td>
+              <td>Shifts the bits of the left operand to the right by a specified number of positions. The vacant positions are filled based on the sign of the left operand. For non-negatives, the vacant positions are filled with 0.</td>
+            </tr>
+          </table>                  
+    <hr />
+    <div class="next-prev-btn">
+        <button>Previous</button>
+        <button>Next</button>
+    </div>
+    `
+})
+const basic4 = document.querySelector('.basic4')
+basic4.addEventListener('click', () =>{
+    context.innerHTML = `
+    <h1>Strings</h1>
+    <p>Strings represent a sequence of characters 
+    (letters, numbers, symbols), like a sentence. Strings are surrounded by single or double quotes.</p>
+<p>
+    Strings can be combined with each other using the addition operator 
+    (+) and multiplied with the multiplication operator (*).
+</p>
+<h2>String Formatting</h2>
+<p>String formatting refers to the manipulation of strings.
+    That way they can change forms and include variables or other expressions.</p>
+<h3> The % Operator</h3>
+<p>This type of string formatting uses the %s inside the string, for each variable passed to it. The variables of interest need to be specified after the string prefixed with a percentage sign (%) and in the correct order.
+    Note: The %d can also be used numbers that are included in the string.
+    </p>
+<h3>The .fortmat() Method</h3>
+<p>This type of string formatting uses curly braces ({}) as placeholders for the variables 
+    inside the string. The variables of interest are passed as
+    arguments to the .format() method that is applied to the string and in the correct order.</p>
+<h3>The "f string" format</h3>
+<p>This type of string is prefixed with an “f”. Inside of the strings the variables are surrounded
+    by curly braces. F strings is usually the most optimal way of formatting strings.</p>
+    <h4>The "=" specifier</h4>
+    <p>The “=” specifier allows for the variable’s name and an equal sign to be assigned
+         to the string along with the variable’s value. </p>
+    <h4>String Decoration</h4>
+<h2>Raw strings</h2>
+<p>Raw strings are prefixed with an “r”. Raw strings ignore any escape 
+    characters inside of the string.</p>
+<h2>Multi-line strings</h2>
+<p>Multiline strings cover more than one line, in the string’s expression, any new-line
+    characters (\n) will be included. Multiline strings
+    are surrounded by three single or double quotes instead of one.</p>
+<h2>Unicode Strings</h2>
+<p>Unicode strings are prefixed with a “u”. They include Unicode characters.</p>
+
+
+<div class="next-prev-btn">
+    <button>Previous</button>
+    <button>Next</button>
+</div>
     `
 })
