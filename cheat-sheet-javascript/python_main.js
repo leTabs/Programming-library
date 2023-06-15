@@ -7,7 +7,8 @@ basics = [
     'Variables',
     'Operators',
     'Strings',
-    'Basic Functions'
+    'Basic Functions',
+    'Indexing'
 ]
 controlFlow = [
     'if Statments',
@@ -682,3 +683,86 @@ basic4.addEventListener('click', () =>{
 </div>
     `
 })
+
+
+const basic5 = document.querySelector('.basic5')
+basic5.addEventListener('click', () =>{
+    context.innerHTML = `
+    <h1>Basic Functions</h1>
+    <p>
+    Python has available build-in functions, code that perform a specific action. 
+    The functions can accept arguments/parameters.
+    Arguments are data that are used by the function during its 
+    execution.</p>
+    <h2>print()</h2>
+    <p>print(): Displays content on the screen, such as the context of variables, values,
+        or other expressions. The function can accept more than one argument separated by 
+        commas. By default, after the output, print() adds a new-line character (\n).</p>
+    <h3>sep</h3>
+    <p>When the expressions are more than one, the “sep” keyword specifies how the expression should be
+        separated during printing. By default, “sep” is set to a single space.</p>
+        <h3>end</h3>
+    <p>The “end” keyword is provided as an argument to the print() function to modify the default new-line
+        character at the end of the output, by assigning a value to the “end”</p>
+    <h2>input()</h2>
+    <p>input():  allows the user of the program to insert data into it. The function receives the data in a string form. Input can accept optional arguments, that are printed
+        as a message when the input runs, calling the for the user to insert data. </p>
+    <h2>len()</h2>
+    <p>len(): returns the total number of items in a collection 
+        (string, list dicts, etc). The function accepts the collection as argument.</p>
+    <h2>type()</h2>
+    <p>type(): returns data type or class object of it’s argument.</p>
+    <h2>range()</h2>
+    <p>range(): generates a sequence of numbers withing a specified range. Returns an iterable 
+        object, that represents the sequence of numbers. The object has a starting value, a final 
+        value, and a stepping size. Each of them passed to function as arguments.
+        The only required argument is the range of the sequence. The default starting point is 
+        set to zero and the stepping size is 1. In result a sequence of the range 10, will start from 0 & end on 9.
+    </p>
+
+<p>Two additional integer arguments represent the starting an finishing values respectively. </p>
+<p>range() can generate a sequence with negative values</p>
+<p>Range() can generate a sequence with descending order.</p>
+<h2>Convergence Functions</h2>
+<table>
+    <tr>
+      <th>Function</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>str()</td>
+      <td>Converts its argument to a string.</td>
+    </tr>
+    <tr>
+      <td>int()</td>
+      <td>Converts its argument to an integer.</td>
+    </tr>
+    <tr>
+      <td>float()</td>
+      <td>Converts its argument to a floating point number.</td>
+    </tr>
+    <tr>
+      <td>list()</td>
+      <td>Converts its argument to a list.</td>
+    </tr>
+    <tr>
+      <td>dict()</td>
+      <td>Converts its argument to a dictionary.</td>
+    </tr>
+  </table>
+  <p>Note: if the argument of a convergence function is not compatible with the data type of change, an error will be raised. 
+    For example the string ‘5’ can be used to the int() function to be turned in to 5, however, the string ‘I am the number five’ cannot be used to the int() function and  will  raise an error.
+    </p>          
+
+    <div class="next-prev-btn">
+        <button>Previous</button>
+        <button>Next</button>
+    </div>
+    `
+})
+
+
+
+
+const basic6 = document.querySelector('.basic6')
+basic6.addEventListener('click', () =>{alert('pop')})
