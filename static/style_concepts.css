@@ -49,3 +49,47 @@ h3{
 hr{
     width: 80%;
 }
+
+
+/* ACTUAL CONTEXT */
+.context{
+    /* border: solid white; */
+    padding:5rem 7rem;
+    /* overflow-y: auto; */
+}
+
+.context hr{
+    margin: 0.5rem 0;
+    width: 100%;
+}
+.title-con{
+    font-size:3rem;
+    text-align: center;
+    margin: 0.5rem 0 1.5rem 0
+}
+.description{
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+.clasic-ul{
+    font-size: 1.3rem;
+    margin:1rem 0 1.5rem 3rem;
+}
+
+.next-prev-btn{
+    text-align: center;
+    margin: 3rem auto 10rem auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.next-prev-btn button{
+    font-size: 2rem;
+    width: 13rem;
+    height: 4rem;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+}
+
+/* END ACTUAL CONTEXT */
