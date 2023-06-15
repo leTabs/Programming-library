@@ -327,3 +327,41 @@ basic1.addEventListener('click', ()=>{
     </div>
     `
 })
+
+const basic2 = document.querySelector('.basic2')
+basic2.addEventListener('click', ()=>{
+    context.innerHTML = `
+    <h1>Variables<h1>
+    <p>Variables are references to values. They use the assignment operator (=) 
+    to be defined. Variables can be displayed, manipulated, combined and more,
+    to serve the need of the program. The values of a variable can be int, float,
+    string, list etc.</p>
+    <hr />
+    <p>In Python, variable follow the following rules:</p>
+    <ul>
+       <li>They must start with a letter (a-z, A-Z) or an underscore ( _ ).</li>
+        <li>They can contain letters, whole numbers (0-9) and underscores.</li>
+        <li>They are case sensitive.</li>
+        <li>The present a meaningful name about the context.</li>
+        <li>They can not be a python keyword.</li>
+        <li>They don’t have a restricted length.</li>
+    </ul>
+    <div class="example">
+        <p>variable_name = 56</p>
+        <p>var001</p>
+        <p>var001 is not the same as Var001</p>
+        <p>person01 = 'Joohn'</p>
+    </div>
+    <p>Variables with other variables as values reference the same value.</p>
+    <div class="example">
+        <p>>>> x = 5<br />
+        >>> y = x # y is equal to 5<br />
+        >>> # if x it's value, y will change too</p>
+    </div>
+    <hr />
+    <div class="next-prev-btn">
+        <button>Previous</button>
+        <button>Next</button>
+    </div>
+    `
+})
