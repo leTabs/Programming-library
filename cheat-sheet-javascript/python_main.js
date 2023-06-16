@@ -785,11 +785,74 @@ basic6.addEventListener('click', () =>{
 const controlF0 = document.querySelector('.controlF0')
 controlF0.addEventListener('click', ()=>{
     context.innerHTML = `
-    <h1>if Statement</h1>
+    <h1>Condition Statements</h1>
+    <h2>"if"</h2>
     <p>The if statement sets a condition on when a block of code should run. 
         The code under the if statement influence(indentation) will run only if the
          condition evaluates to True. It is composed by the “if” keyword, the condition, 
          a column, and the block of code</p>
     <p>If no block of code is passed, the if statement will raise an error:</p>
+
+<h2>"elif"</h2>
+<p>The “elif” statement is used with the if statement. “elif” also sets a condition on a block of code, but the
+     condition is checked only if all the above conditions (if & elif statements) are evaluated to False.
+     Otherwise, it is ignored along with the block of code under its influence. Structure:</p>
+
+<h2>"else"</h2>
+<p>The “else” statement will execute a block of code only if all the above conditions
+     (if & elif statements) are evaluated to False.</p>
+     <div class="next-prev-btn">
+        <button>Previous</button>
+        <button>Next</button>
+        </div>
     `
 })
+
+const controlF1 = document.querySelector('.controlF1')
+controlF1.addEventListener('click', ()=>{
+    context.innerHTML = `
+    <h1>Ternary Operator</h1>
+    <p>The ternary operator is a conditional statement that returns one of two expressions. 
+        The expression depends on the evaluation of the condition as True or False. Structure:</p>
+    `})
+
+    const controlF2 = document.querySelector('.controlF2')
+controlF2.addEventListener('click', ()=>{
+    context.innerHTML = `
+    <h1>while Loop</h1>
+    <p>While loop statements will execute a block of code repeatedly for 
+        as long as a condition is True. If the condition evaluates to False, 
+        the loop stops. Structure:</p>
+    `})
+
+    const controlF3 = document.querySelector('.controlF3')
+controlF3.addEventListener('click', ()=>{
+    context.innerHTML = `
+    <h1>The for Loop</h1>
+    <p>for loops statemets will iterate over the context 
+        (each item) of an iterable sequence, like lists strings, dictionaries etc.</p>
+    <p>Notably: for loops are often used in combination to the range() function to perform
+        a task a number of times. </p>
+    `})
+
+
+
+    const controlF4 = document.querySelector('.controlF4')
+controlF4.addEventListener('click', ()=>{
+    context.innerHTML = `
+    <h1>The "break" Statement</h1>
+    <p>
+        When a loop (while, for) reaches a break statement, the 
+        loop terminates the iteration and the script continues to execute the lines of code after the loop.
+    </p>
+    `})
+
+    const controlF5 = document.querySelector('.controlF5')
+controlF5.addEventListener('click', ()=>{
+    context.innerHTML = `
+    <h1>The "continue" Statement</h1>
+    <p>
+        When a loop (while, for) reaches a continue statement, the loop jumps at
+         the beginning of the loop.
+    </p>
+    `})
