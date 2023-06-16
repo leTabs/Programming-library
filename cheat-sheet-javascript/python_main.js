@@ -856,6 +856,8 @@ controlF5.addEventListener('click', ()=>{
          the beginning of the loop.
     </p>
     `})
+
+
     const functions0 = document.querySelector('.functions0')
 functions0.addEventListener('click', ()=>{
     context.innerHTML = `    
@@ -889,7 +891,6 @@ functions0.addEventListener('click', ()=>{
          number of arguments and in the form of dictionaries. The word “kwargs” is sort for 
          “keyword arguments”.</p>
          `})
-
 const functions1 = document.querySelector('.functions1')
 functions1.addEventListener('click', ()=>{
 context.innerHTML = `  
@@ -897,3 +898,38 @@ context.innerHTML = `
     <p>The return statement terminates the execution of a
         function and returns a value back to the function call.</p>
 `})
+
+const functions2 = document.querySelector('.functions2')
+functions2.addEventListener('click', ()=>{
+context.innerHTML = ` 
+<h1>Lambda Functions</h1>
+<p>Lambda functions are single-line anonymous functions. 
+    They can have any number of arguments and only a single expression.</p>`})
+
+
+    const functions3 = document.querySelector('.functions3')
+    functions3.addEventListener('click', ()=>{
+    context.innerHTML = `
+<h1>Scopes</h1>
+<p>
+    In python variables are under the influence of scopes, a variable’s scope dictates which parts 
+    of the code can access the variable. 
+    There are two different kinds of scopes. The global scope and the local scope.
+</p>
+<h2>Global Scope</h2>
+<p>Variables defined outside any function are in the global scope. These variables can be accessed,
+     manipulated etc. from anywhere in the program, including inside of functions.</p>
+<h2>Local Scope</h2>
+<p>
+    Variables defined inside of functions are in the local scope and. These variables can be accessed,
+     manipulated etc. only from withing that specific function. 
+    Local variables are created during the function call and destroyed during the completion of the function
+    execution.
+    Note: local variable can have the same name as global variables. In a case such as this, the two variables
+    do not affect each other.
+</p>
+<h2>The global Keyword</h2>
+<p>Variables that are defined inside of function are in the function’s local scope by default and 
+    cannot be accessed directly from the global scope. A variable can be accessible from the global
+    scope by using the “global” keyword as a prefix inside the function to declare it as a global variable, 
+    allowing the variable to be accessed through both the function’s scope and the global scope.</p>`})
