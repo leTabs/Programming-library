@@ -29,7 +29,8 @@ dataStructures = [
     'Lists',
     'Tuples',
     'Sets',
-    'Dictionaries'
+    'Dictionaries',
+    'Comprehensions'
 ]
 fileDirs = [
     'Paths / Directories',
@@ -79,7 +80,7 @@ function lists(){
     }
     chapters.innerHTML += '<h3>Data Structures</h3>'
     for(item in dataStructures){
-        chapters.innerHTML += `<p class="chapterNames">${dataStructures[item]}</p>`
+        chapters.innerHTML += `<p class="chapterNames dataStructures${item}">${dataStructures[item]}</p>`
     }
     chapters.innerHTML += `<h3> Files and Paths</h3>`
     for(item in fileDirs){
@@ -764,6 +765,7 @@ basic5.addEventListener('click', () =>{
 
 
 
+
 const basic6 = document.querySelector('.basic6')
 basic6.addEventListener('click', () =>{
     context.innerHTML = `
@@ -933,3 +935,71 @@ context.innerHTML = `
     cannot be accessed directly from the global scope. A variable can be accessible from the global
     scope by using the “global” keyword as a prefix inside the function to declare it as a global variable, 
     allowing the variable to be accessed through both the function’s scope and the global scope.</p>`})
+
+
+    const dataStructures0 = document.querySelector('.dataStructures0')
+    dataStructures0.addEventListener('click', ()=>{
+    context.innerHTML = `
+    <h1>Data Structures</h1>
+    <p>Data structures are components that hold and organize data. They define how data is stored, 
+        retrieved, and modified. In addition, they establish the
+         relationships between the data elements and define the operations that can be
+          perform on them.</p>
+    `})
+
+    const dataStructures1 = document.querySelector('.dataStructures1')
+    dataStructures1.addEventListener('click', ()=>{
+    context.innerHTML = `
+    <h1>Lists</h1>
+    <p>Lists are data structures that hold an ordered collection of items in a sequence. 
+        The items inside of a list can be of any kind of data type (integers, strings, other 
+        lists, dictionaries etc.). 
+        Lists are iterable objects
+        </p>
+    <h2>enumerate()</h2>
+    <p>The enumerate() function is used on lists during for looping.
+         Their purpose is to add an index for each item in the list. </p>
+    <h2>zip()</h2>
+    <p>The zip() function is used on lists during looping. They allow for loop to access (iterate) multiple lists at the same time. 
+        Note: If the lists are not of the same length, the loop will ignore items that their index is equal or greater than the smallest participant list.
+        </p>
+    `})
+
+    const dataStructures2 = document.querySelector('.dataStructures2')
+    dataStructures2.addEventListener('click', ()=>{
+    context.innerHTML = `
+    <h1>Tuples</h1>
+    <p>
+        Tuples are ordered collections of items. They cannot be changed after their creation, meaning items cannot be appended or removed.
+         The values in a tuple are separated by commas, usually they are surrounded by parentheses.
+    </p>
+    `})
+
+    const dataStructures3 = document.querySelector('.dataStructures3')
+    dataStructures3.addEventListener('click', ()=>{
+    context.innerHTML = `
+    <h1>Sets</h1>
+    <p>
+        Sets are unordered collections of unique items (no duplicates).
+         They are created by surrounding the items with curly braces.
+    </p>
+    `})
+
+    const dataStructures4 = document.querySelector('.dataStructures4')
+    dataStructures4.addEventListener('click', ()=>{
+    context.innerHTML = `
+    <h1>Dictionaries</h1>
+    <p>
+        Python dictionaries store data as key-value pairs. The elements are unordered and each one is represented by a key-value pair. The key is used to uniquely identify the element, and the value is the data associated with the key. Dictionary keys must be immutable types, numbers, strings tuples etc., while values can be of any type (list, strings, dictionaries, etc.)
+Dictionaries can access values by using square braces and the key associated with that value. As an added functionality, the square braces can create new key-value pairs for the dictionary of interest. 
+    </p>
+    `})
+    const dataStructures5 = document.querySelector('.dataStructures5')
+    dataStructures5.addEventListener('click', ()=>{
+    context.innerHTML = `
+    <h1>Comprehensions</h1>
+    <p>
+        Comprehensions are a concise way of creating lists, dictionaries, and sets based on existing iterables, They provide compact syntax of generating new collections by applying transformations or by filtering the elements of an existing collection.
+Creating a new list/dict/set by iterating over an existing inerrable and applying an expression to each element.
+    </p>
+    `})
