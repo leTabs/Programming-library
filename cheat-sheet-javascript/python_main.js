@@ -18,7 +18,7 @@ controlFlow = [
     'break', 
     'continue'
 ]
-functios = [
+functions = [
     'Functions',
     'return Statment',
     'lambda Functions',
@@ -74,8 +74,8 @@ function lists(){
         chapters.innerHTML +=  `<p class="chapterNames controlF${item}">${controlFlow[item]}</p>`
     }
     chapters.innerHTML += `<h3>Functions</h3>`
-    for(item in functios){
-        chapters.innerHTML += `<p class="chapterNames">${functios[item]}</p>`
+    for(item in functions){
+        chapters.innerHTML += `<p class="chapterNames functions${item}">${functions[item]}</p>`
     }
     chapters.innerHTML += '<h3>Data Structures</h3>'
     for(item in dataStructures){
@@ -856,3 +856,36 @@ controlF5.addEventListener('click', ()=>{
          the beginning of the loop.
     </p>
     `})
+    const functions0 = document.querySelector('.functions0')
+functions0.addEventListener('click', ()=>{
+    context.innerHTML = `    
+    <h1>Functions</h1>
+    <p>
+        A function is a block of organized code that is used to perform one or more tasks. 
+        Functions help on breaking the program in to smaller reusable components.
+         They can accept arguments (or parameters) that can be used by the function to return a
+          result. In the function definition, the arguments are passed as variables.
+        Structure (defining the function):
+    </p> <p>Calling the function:</p>
+    <p>Writing the name of a defined function with parenthesis will execute (invoke/call) the function.
+        If the functions requires arguments, 
+        the arguments are written inside the parenthesis and in the correct order.</p>
+    <p>Functions that require arguments, can have default values for them in the case that in the 
+        function call, no arguments are passed to the function. 
+        This is done by assigning the parameters to a value during the function definition.</p>
+    <p>Functions can contain (nest) other functions within their code. This allows for the 
+        function to include another function as part of its implementation. </p>
+    <h2>*Args</h2>
+    <p>
+    Args: the name “args” is associated with the asterisk (*) used as a prefix for a function argument.
+     With this addition, the function can accept an arbitrary number of arguments. This is helpful when
+      the function is uncertain 
+    as to if and how many arguments are going to passed during the function call. 
+    </p>
+    <h2>**kwargs</h2>
+    <p>Kwargs: the name “kawrgs is associated with the double asterisks (**) used as a prefix for
+         a function argument, during the function definition. With this addition the function can accept 
+         an arbitrary 
+         number of arguments and in the form of dictionaries. The word “kwargs” is sort for 
+         “keyword arguments”.</p>
+         `})
