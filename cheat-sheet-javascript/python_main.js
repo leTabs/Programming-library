@@ -889,3 +889,11 @@ functions0.addEventListener('click', ()=>{
          number of arguments and in the form of dictionaries. The word “kwargs” is sort for 
          “keyword arguments”.</p>
          `})
+
+const functions1 = document.querySelector('.functions1')
+functions1.addEventListener('click', ()=>{
+context.innerHTML = `  
+    <h1>The return Statement</h1>
+    <p>The return statement terminates the execution of a
+        function and returns a value back to the function call.</p>
+`})
