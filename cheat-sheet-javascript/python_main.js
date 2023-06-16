@@ -71,7 +71,7 @@ function lists(){
     }
     chapters.innerHTML += `<h3>Control flow</h3>` 
     for(item in controlFlow){
-        chapters.innerHTML +=  `<p class="chapterNames">${controlFlow[item]}</p>`
+        chapters.innerHTML +=  `<p class="chapterNames controlF${item}">${controlFlow[item]}</p>`
     }
     chapters.innerHTML += `<h3>Functions</h3>`
     for(item in functios){
@@ -765,4 +765,31 @@ basic5.addEventListener('click', () =>{
 
 
 const basic6 = document.querySelector('.basic6')
-basic6.addEventListener('click', () =>{alert('pop')})
+basic6.addEventListener('click', () =>{
+    context.innerHTML = `
+    <h1>Indexing</h1>
+    <p>Indexing refers to the process of accessing individual elements or a range of elements 
+        in a sequence. Allows for the retrieval of specific values based on their position within the 
+        sequence. Indexing starts from 0. Negative indexing will result on the reverse search of the 
+        sequence, with -1 being the last item in the array. 
+        Note: indexes equal or greater than the sequence’s length, will raise an IndexError error.
+        </p>
+
+<div class="next-prev-btn">
+<button>Previous</button>
+<button>Next</button>
+</div>
+    `
+})
+
+const controlF0 = document.querySelector('.controlF0')
+controlF0.addEventListener('click', ()=>{
+    context.innerHTML = `
+    <h1>if Statement</h1>
+    <p>The if statement sets a condition on when a block of code should run. 
+        The code under the if statement influence(indentation) will run only if the
+         condition evaluates to True. It is composed by the “if” keyword, the condition, 
+         a column, and the block of code</p>
+    <p>If no block of code is passed, the if statement will raise an error:</p>
+    `
+})
