@@ -16,7 +16,7 @@
     --pink: rgb(219, 153, 213);
     --purple:rgb(198, 82, 252);
     --dark-blue:rgb(0, 52, 81) ;
-    --navbar-background: linear-gradient(90deg, #e7ed7f 10%, #30282f);
+    --navbar-background: linear-gradient(90deg,  #07403e 10%, #610253);
     --background: ;
 }
 html{
@@ -52,6 +52,7 @@ nav{
 nav span, nav div, .concept{
     margin: 1rem;
     font-size: 1.5rem ;
+    color: white;
 }
 nav div{
     margin-right: 3rem;
