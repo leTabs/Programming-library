@@ -20,7 +20,7 @@
     --background: ;
 }
 html{
-    background: linear-gradient(-210deg , #610253 0%, #610253 4%,  rgb(0, 0, 0) 80% );
+    background: linear-gradient(-210deg , #610253 0%, #610253 4%,  rgb(20, 1, 19) 40%, black  );
     /* background: linear-gradient(90deg , #032b43, #610253); */
 }
 html *{
