@@ -1,4 +1,4 @@
-/* Make root variables format it better */
+/*
 :root{
     --main-text-clr: white;
     --cyan-blue: cyan ;
@@ -8,10 +8,20 @@
     --dark-blue:rgb(0, 52, 81) ;
     --navbar-background: linear-gradient(90deg, #28d0d2, #a40f90);
     --background: ;
-
+}*/
+:root{
+    --main-text-clr: white;
+    --cyan-blue: cyan ;
+    --high-pink: rgb(249, 5, 151);
+    --pink: rgb(219, 153, 213);
+    --purple:rgb(198, 82, 252);
+    --dark-blue:rgb(0, 52, 81) ;
+    --navbar-background: linear-gradient(90deg, #e7ed7f 10%, #30282f);
+    --background: ;
 }
 html{
-    background: linear-gradient(90deg , #032b43, #610253);
+    background: linear-gradient(-240deg , #fbff00 0%, #fbff00 10% ,#610253 50%, #610253 90%);
+    /* background: linear-gradient(90deg , #032b43, #610253); */
 }
 html *{
     padding: 0;
@@ -71,7 +81,7 @@ nav div{
     border-color: var(--cyan-blue);
     cursor: pointer;
 }
-button{
+.docks-dload{
     background-color: var(--pink);
     font-size: 1.2rem;
     margin:1rem 0 0 0.5rem;
@@ -81,7 +91,7 @@ button{
     color: var(--dark-blue);
     transition: 300ms;
 }
-button:hover{
+.docks-dload:hover{
     background-color: transparent;
     color: var(--pink);
     cursor:context-menu;
@@ -103,9 +113,4 @@ button:hover{
     font-size: 1.7rem;
     font-weight: bold;
     margin:0.5rem;
-}
-.concept-img{
-    width: 2rem;
-    height: 2rem;
-    filter:invert(100%);
 }
