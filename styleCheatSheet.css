@@ -16,11 +16,11 @@
     --pink: rgb(219, 153, 213);
     --purple:rgb(198, 82, 252);
     --dark-blue:rgb(0, 52, 81) ;
-    --navbar-background: linear-gradient(90deg,  #07403e 10%, #610253);
+    /* --navbar-background: linear-gradient(90deg,  #07403e 10%, #610253); */
     --background: ;
 }
 html{
-    background: linear-gradient(-210deg , #610253 0%, #610253 4%,  rgb(20, 1, 19) 40%, black  );
+    background: linear-gradient(-210deg , #610253 0%, #610253 4%,  rgb(20, 1, 19) 25%, black  );
     /* background: linear-gradient(90deg , #032b43, #610253); */
 }
 html *{
@@ -41,7 +41,8 @@ html *{
     background: #3ba2e7;
   }
 nav{
-    background: var(--navbar-background);
+    /* background: var(--navbar-background); */
+    background: transparent;
     height: 3.5rem;
     display: flex;
     justify-content: space-between;
@@ -52,7 +53,7 @@ nav{
 nav span, nav div, .concept{
     margin: 1rem;
     font-size: 1.5rem ;
-    color: white;
+    color: cyan
 }
 nav div{
     margin-right: 3rem;
