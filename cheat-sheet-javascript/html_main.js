@@ -5,19 +5,31 @@ const basics = [
     'Tags',
     'Elements',
     'Page Structure',
-    'Attributes'
+    'Attributes',
+    'Comments'
 ]
-
+const tagTypes = [
+    'headings', 
+    'paragraphs',
+    'span',
+    'text-decoration tags',
+    'lists',
+    'link tags',
+]
 function list(){
     chapters.innerHTML+= `<h1>Introduction</h1><hr>`
     chapters.innerHTML += `<h3>Basics</h3>`
     for(item in basics){
         chapters.innerHTML +=  `<p class="chapterNames basic${item}">${basics[item]}</p>`
     }
+    chapters.innerHTML += '<h3>Common Tag Types</h3>'
+    for(item in tagTypes){
+        chapters.innerHTML +=  `<p class="chapterNames tagTypes${item}">${tagTypes[item]}</p>`
+    }
 }
 list()
 
-/*
+
 context.innerHTML = `
 <h1>Introduction</h1>
 <p>HTML stands for HyperText Markup Language. HTML allows for the structuring of
@@ -25,7 +37,7 @@ context.innerHTML = `
       by using tags and elements, such as, paragraphs, lists, headings etc. The 
       combination of all the tags and elements results to the creation the page’s
        structure.</p>
-` */
+`
 
 const basic0 = document.querySelector('.basic0')
 basic0.addEventListener('click', ()=>{
@@ -111,14 +123,18 @@ The < body > tag nests other elements and tags that compose the content of the w
         <li>Behavior: attributes can define behaviors for elements, such as destination for hyperlinks, alternative text for accessibility purposes etc. </li>
         <li>Appearance: certain attributes change the appearance of an element or allow for the inclusion of inline Css (Css is a Cascading language with the ability to alter elements by changing their size color etc.).</li>
         <li>Events: event type attributes allow for the inclusion of JavaScript, by enabling a functionality when the attribute takes effect.</li>
+        </ul>
         <p> Values:<br />
             Attribute values can be expressed as strings, numbers, URLs, and Booleans. The value will depend on the participating attribute and the usage of it. 
             Attributes can allow for multiple values to be assign on them, the values will be separated by spaces.
         </p>
-    </ul>
+        <p>
+        Aside from the standard attributes, HTML can utilize custom attributes for storing additional information. However, custom attributes may not be understood by all browsers and other included technologies. Therefore, it’s better practice to use the standard attributes.
+        </p>
+ 
     `})
 
-
+    
     const basic4 = document.querySelector('.basic4')
     basic4.addEventListener('click', ()=>{
         context.innerHTML = ` 
