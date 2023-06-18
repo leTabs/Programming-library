@@ -67,3 +67,29 @@ Inline elements appear to the website next to other elements in the webpage, cov
          the browsers will automatically add some margin (space) around the element.
     </p>
     `})
+
+
+    const basic2 = document.querySelector('.basic2')
+    basic2.addEventListener('click', ()=>{
+        context.innerHTML = ` 
+    <h1>Page Structure</h1>
+    <p>
+        The combine power of all elements and tags creates the structure of the page. The structure acts as a skeleton on which can be added styling and functionality.<br />
+        Even the simplest of webpages need to have three certain elements: 
+    </p>
+    <ul>
+        <li>< html > < /html ></li>
+        <li> < head > < /head ></li>
+        <li> < body > < /body ></li>
+    </ul>
+    <p>
+        And the file of the website needs to start with a < !DOCTYPE html > statement, 
+        informing the browser about the version of HTML that is being utilized. 
+    </p>
+    <p>
+        The < html > tag acts as the root element and nests the “head” and “body” tags inside of it. <br />
+The < head > tag includes information about the page, such as the title. <br />
+The < body > tag nests other elements and tags that compose the content of the webpage.
+
+    </p>
+    ` })
