@@ -117,3 +117,14 @@ The < body > tag nests other elements and tags that compose the content of the w
         </p>
     </ul>
     `})
+
+
+    const basic4 = document.querySelector('.basic4')
+    basic4.addEventListener('click', ()=>{
+        context.innerHTML = ` 
+        <h1>Comments</h1>
+        <p>
+        Comments are context of the HTML document that don’t provide any functionality to the page. Comments are used to add a description to the code for the programmer or other programmers, also they prevent a block of code to be included to the page while writing and fixing code.  The comments can cover form
+         parts of a single line to multiple lines. The format is  <!-- comment goes here -->.
+        </p>
+        `})
