@@ -273,3 +273,15 @@ fni.addEventListener('click', ()=>{
         Typically, when a form is submitted, the data are sent to a server to be processed. Technologies like Python, Node.js and PHP can handle the data. They can manipulate the data, filter them, store them into a database, send it elsewhere etc.
         </p>`
 })
+
+
+
+const tables = document.querySelector('.tables')
+tables.addEventListener('click', ()=>{
+    context.innerHTML = `<h1>Tables</h1>
+<p>
+    HTML tables are used to display organized data on the webpage. They consist of columns and row. They are created with the < table>< /table> tag, which nests other tabular tags.
+</p>
+<p>Table goes here</p>
+<p>Table goes here</p>
+<p>Structure: ...</p>`})
