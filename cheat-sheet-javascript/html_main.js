@@ -186,3 +186,20 @@ context.innerHTML =`<h1>Text Decoration Tags</h1>
 <h2>Underline Tag</h2>
 <p>It is used to underline to text. Commonly, to underline specific text withing a larger text body.</p>
 <p>Structure: < u> text < /u>  </p>`})
+
+const tagTypes4 = document.querySelector('.tagTypes4')
+tagTypes4.addEventListener('click', ()=>{
+context.innerHTML =`
+<h1>List Tag</h1>
+<p>
+    List tags create lists of contexts. <br />
+    There are two kinds of lists:
+</p>
+<ol>
+    <li>Ordered (each item is indexed), defined by the < ol>< /ol> tag</li>
+    <li>Unordered (the items are not indexed),  defined by the < ul>< /ul>.</li>
+</ol>
+<p>
+    Inside the list, each item is specified with list item tag < li>< /li>, therefore, a list is a combination of two types tags.
+</p>
+`})
