@@ -172,3 +172,17 @@ context.innerHTML = `<h1>Span</h1>
     Holds text, usually small pieces of text. Commonly, to target specific text inside a larger text body, like a paragraph.
     <p>Structure: < span> Some text </ span> </p>
 </p>`})
+
+
+const tagTypes3 = document.querySelector('.tagTypes3')
+tagTypes3.addEventListener('click', ()=>{
+context.innerHTML =`<h1>Text Decoration Tags</h1>
+<h2>Bold tag</h2>
+<p>The are used to apply the bold effect to text. Commonly, to make words stand out in a large body of text. </p>
+<p>Structure: < b> text < /b></p>
+<h2>Italic Tag</h2>
+<p>It is used to apply the italic effect to text. Commonly, to turn words in the italic formal in a large body of text.</p>
+<p>Structure: < i> text < /i></p>
+<h2>Underline Tag</h2>
+<p>It is used to underline to text. Commonly, to underline specific text withing a larger text body.</p>
+<p>Structure: < u> text < /u>  </p>`})
