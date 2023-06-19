@@ -29,7 +29,9 @@ function list(){
     }
     chapters.innerHTML += `<h3>Data Submission</h3> 
     <p class="chapterNames fni">Form s & Input</p>`
-
+    chapters.innerHTML += `<h3>Data representation</h3>
+    <p class="chapterNames tables">Tables</p>`
+    
 }
 list()
 
