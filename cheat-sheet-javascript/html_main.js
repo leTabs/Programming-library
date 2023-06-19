@@ -29,7 +29,7 @@ function list(){
 }
 list()
 
-
+/*
 context.innerHTML = `
 <h1>Introduction</h1>
 <p>HTML stands for HyperText Markup Language. HTML allows for the structuring of
@@ -38,7 +38,7 @@ context.innerHTML = `
       combination of all the tags and elements results to the creation the page’s
        structure.</p>
 `
-
+*/
 const basic0 = document.querySelector('.basic0')
 basic0.addEventListener('click', ()=>{
     context.innerHTML = `
@@ -144,3 +144,31 @@ The < body > tag nests other elements and tags that compose the content of the w
          parts of a single line to multiple lines. The format is  <!-- comment goes here -->.
         </p>
         `})
+
+    const tagTypes0 = document.querySelector('.tagTypes0')
+    tagTypes0.addEventListener('click', ()=>{
+    context.innerHTML =`
+    <h1>Heading Tags</h1>
+    <p>
+        Headings create a text hierarchy in the web page, the importance of the heading’s text is determined by the size and boldness of the text.<br />
+        There are six heading tags, each one represents a hierarchical order with the < h1 ></ h1 > indicating the most important text and the < h6 ></ h6 > the least important text.
+        <p>
+            Note: aside from visual hierarchy, headings are also used by the search engines in the search engine optimization (SEO) to understand the context of the page and its relevance.
+        </p>
+    `})
+
+    const tagTypes1 = document.querySelector('.tagTypes1')
+    tagTypes1.addEventListener('click', ()=>{
+    context.innerHTML = `            <h1>Paragraphs</h1>
+<p>The paragraph tag is used to display large bodies of text such as articles, explanations etc.</p>
+<p> Structure: < p > Some text < /p ></p>`    
+})
+
+
+const tagTypes2 = document.querySelector('.tagTypes2')
+tagTypes2.addEventListener('click', ()=>{
+context.innerHTML = `<h1>Span</h1>
+<p>
+    Holds text, usually small pieces of text. Commonly, to target specific text inside a larger text body, like a paragraph.
+    <p>Structure: < span> Some text </ span> </p>
+</p>`})
