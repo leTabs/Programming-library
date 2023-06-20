@@ -202,6 +202,21 @@ The < body > tag nests other elements and tags that compose the content of the w
     <td>References the position of a file or the URL address.</td>
   </tr>
 </table>
+<h2>Usage</h2>
+<table>
+  <tr>
+    <th>Usage</th>
+  </tr>
+  <tr>
+    <td>&lt;h1 class="introduction"&gt;Welcome to the page&lt;/h1&gt;</td>
+  </tr>
+  <tr>
+    <td>&lt;button disabled&gt;You can’t click me&lt;/button&gt;</td>
+  </tr>
+  <tr>
+    <td>&lt;img src="file-path-or-URL" /&gt;</td>
+  </tr>
+</table>
 
     `})
 
