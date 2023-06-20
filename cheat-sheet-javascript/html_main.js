@@ -63,6 +63,30 @@ basic0.addEventListener('click', ()=>{
         Tags that don’t encapsulate content are called self-closing tags and include a forward slash 
         before the second angle bracket (“< tag-name />”)
     </p>
+    <h2>Example</h2>
+    <table>
+  <tr>
+    <th>Tag</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>&lt;div&gt;&lt;/div&gt;</td>
+    <td>Commonly used for wrapping other tags.</td>
+  </tr>
+  <tr>
+    <td>&lt;p&gt;&lt;/p&gt;</td>
+    <td>Contains text and displays it as a paragraph.</td>
+  </tr>
+  <tr>
+    <td>&lt;img /&gt;</td>
+    <td>Includes an image to the webpage.</td>
+  </tr>
+  <tr>
+    <td>&lt;br /&gt;</td>
+    <td>Creates a break-line.</td>
+  </tr>
+</table>
+
     `
 })
 
