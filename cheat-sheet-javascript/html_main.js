@@ -183,7 +183,26 @@ The < body > tag nests other elements and tags that compose the content of the w
         <p>
         Aside from the standard attributes, HTML can utilize custom attributes for storing additional information. However, custom attributes may not be understood by all browsers and other included technologies. Therefore, it’s better practice to use the standard attributes.
         </p>
- 
+        <h2>Attribute Examples</h2>
+        <table>
+  <tr>
+    <th>Attribute</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Class</td>
+    <td>Gives a class name to an element (assisting technologies can use them)</td>
+  </tr>
+  <tr>
+    <td>Disabled</td>
+    <td>Excludes the functionality of an element (like a button, becomes unclickable)</td>
+  </tr>
+  <tr>
+    <td>Src</td>
+    <td>References the position of a file or the URL address.</td>
+  </tr>
+</table>
+
     `})
 
     
