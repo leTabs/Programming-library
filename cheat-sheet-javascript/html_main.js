@@ -63,7 +63,7 @@ basic0.addEventListener('click', ()=>{
         Tags that don’t encapsulate content are called self-closing tags and include a forward slash 
         before the second angle bracket (“< tag-name />”)
     </p>
-    <h2>Example</h2>
+    <h2>Tag examples</h2>
     <table>
   <tr>
     <th>Tag</th>
@@ -108,6 +108,28 @@ Inline elements appear to the website next to other elements in the webpage, cov
         Block elements start on a new line. In addition,
          the browsers will automatically add some margin (space) around the element.
     </p>
+    <h2>Element examples</h2>
+    <table>
+  <tr>
+    <th>Element</th>
+  </tr>
+  <tr>
+    <td>
+      &lt;h1&gt;Welcome&lt;/h1&gt;<br>
+      &lt;p&gt;Hello, world.&lt;/p&gt;
+    </td>
+  </tr>
+  <tr>
+    <td>
+      &lt;div&gt;<br>
+      &nbsp;&nbsp;&nbsp;&lt;h1&gt;Welcome&lt;/h1&gt;<br>
+      &nbsp;&nbsp;&nbsp;&lt;p&gt;Hello, world&lt;/p&gt;<br>
+      &nbsp;&nbsp;&nbsp;&lt;br/&gt;<br>
+      &lt;/div&gt;
+    </td>
+  </tr>
+</table>
+
     `})
 
 
