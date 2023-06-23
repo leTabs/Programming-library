@@ -1,74 +1,35 @@
-/* html{ 
-    background: linear-gradient(-210deg , #610253 0%, #610253 4%,  rgb(20, 1, 19) 25%, black  );
-    /* background: linear-gradient(90deg , #032b43, #610253); */
-/* } */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheat Sheet Library|Home</title>
+    <link href="static/styleCheatSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <nav>
+        <p>leTabs</p>
 
-::-webkit-scrollbar {
-    width: 5px;
-  }
-::-webkit-scrollbar-track {
-    background:  #7e035d ;
-  }
-::-webkit-scrollbar-thumb {
-    background:  #d323a4;
-  }
-::-webkit-scrollbar-thumb:hover {
-    background: #3ba2e7;
-  }
+        <div class="nav-links">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Sheets</a>
+                <a href="">Algorithms</a>
+                <a href="">Docks</a>
+        <button>Contact</button>
+        </div>
+    </nav>
+    <main class="main">
+        <section class="introduction">
+            <h2>The Programming <br />Library</h2>
+            <p>Welcome to my programming resource hub! <br />
+                Cheat sheets and algorithms made easy. <br />
+                Dive in and excel in coding! Happy learning!</p>
+            <button>Continue</button>
+        </section>
+    </main>
+</body> 
+<!-- <script src="main.js" rel="text"></script> -->
+</html>
 
-
-
-html *{
-    padding: 0;
-    margin: 0;
-    font-family: sans-serif;
-}
-body{
-    padding:0;
-    margin:0;
-    overflow-x: hidden;
-}
-.introduction{
-    width: 100vw;
-    height: 100vh;
-    padding-top: 7rem;
-    background: linear-gradient( white 0%, white 10%, rgb(115, 73, 171) 70%, rgb(71, 38, 124) 90%);
-}
-nav{
-    border-bottom: solid 1px red;
-    display: flex;
-    justify-content: space-between;
-    padding:0.5rem;
-    position: fixed;
-    top:0%;
-    width: 100vw;
-}
-nav p{
-    display: inline;
-    font-size: 2.3rem;
-    font-weight: bold;
-    margin:0.5rem;
-    margin-left: 2.5rem;
-    margin-top: 1rem;
-}
-.nav-links{
-    margin:0.75rem;
-    /* margin:0 ; */
-    padding:0;
-    margin-right: 5rem;
-} 
-
-.nav-links a{
-    margin-right: 2rem;
-    text-decoration: none;
-    font-size: 1.3rem;
-}
-.nav-links button{
-    padding:0.7rem;
-    color: rgb(255, 255, 255);
-    background-color: rgb(194, 0, 194);
-    border: solid 1px rgb(194, 0, 194);
-    border-radius: 25px;
-    font-size: 1.3rem;
-    margin-left: 6rem;
-}
