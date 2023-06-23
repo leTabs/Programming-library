@@ -109,21 +109,21 @@ nav p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .explanation h2{
-    padding-top: 12rem;
+    padding-top: 10rem;
     font-size: 4rem;
-    /* color: rgb(48, 17, 55); */
-    color: white;
-    text-shadow: 3px 3px 13px rgb(48, 17, 55);
+    color: rgb(35, 2, 42);
+    /* color: white; */
+    /* text-shadow: 3px 3px 13px rgb(48, 17, 55); */
 }
 .explanation p{
     text-align: left;
     width:92.5vw;
-    background-color: rgb(27, 6, 32);
+    background-color: rgb(76, 12, 92);
     color: white;
     margin-top: 5rem;
-    padding:3rem;
+    padding:5rem;
     font-size: 1.5rem;
 }
 .explanation p span{
-    color: rgb(239, 82, 208)
+    color: rgb(230, 60, 162)
 }
