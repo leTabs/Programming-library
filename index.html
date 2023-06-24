@@ -1,144 +1,64 @@
-/* html{ 
-    background: linear-gradient(-210deg , #610253 0%, #610253 4%,  rgb(20, 1, 19) 25%, black  );
-    /* background: linear-gradient(90deg , #032b43, #610253); */
-/* } */
-/* GENERAL */
-::-webkit-scrollbar {
-    width: 5px;
-  }
-::-webkit-scrollbar-track {
-    background:  #7e035d ;
-  }
-::-webkit-scrollbar-thumb {
-    background:  #d323a4;
-  }
-::-webkit-scrollbar-thumb:hover {
-    background: #3ba2e7;
-  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheat Sheet Library|Home</title>
+    <link href="static/styleCheatSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <nav>
+        <p>leTabs</p>
 
+        <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#sheets">Sheets</a>
+                <a href="">Algorithms</a>
+                <a href="">Docks</a>
+        <button>Contact</button>
+        </div>
+    </nav>
+    <main class="main">
+        <section class="introduction" id="home">
+            <h2>The Programming <br />Library</h2>
+            <p>Welcome to my programming resource hub! <br />
+                Cheat sheets and algorithms made easy. <br />
+                Dive in and excel in coding! Happy learning!</p>
+            <a href="#about"><button>Continue</button></a>
+        </section>
+        <section class="explanation" id="about">
+            <h2>The website</h2>
+            <p>
+                Whether you're a seasoned developer or just starting your coding journey, looking for a
+                 quick reference or seeking to deepen your understanding, 
+                this website provides you with valuable cheat sheets and algorithm references. 
+                <br /><br />
+                By offering concise and handy summaries of their syntax, key concepts, and best practices.
+                <br /> 
+                <br />
+                <span>Happy coding!</span>
+            </p>
+        </section>
+        <section class="sheets" id="sheets">
+            <h2>Cheat Sheets</h2>
+            <div class="concept-wrapper">
+                <div >
+                    <h3>HTML</h3>
+                    <h3>CSS</h3>
+                    <h3>JavaScript</h3>
+                    <h3>TypeScript</h3>
+                    <h3>Python</h3>
+                    <h3>SQL</h3>
+                    <h3>APIs</h3>
+                    <h3>Networking</h3>
+                </div>
+                <p>POOP</p>
+                </div>
+        </section>
+    </main>
+</body> 
+<!-- <script src="main.js" rel="text"></script> -->
+</html>
 
-
-html *{
-    padding: 0;
-    margin: 0;
-    font-family: sans-serif;
-}
-body{
-    padding:0;
-    margin:0;
-    overflow-x: hidden;
-}
-/* NAVIGATION BAR */
-nav{
-    display: flex;
-    justify-content: space-between;
-    padding:0.5rem;
-    position: fixed;
-    top:0%;
-    width: 100vw;
-    box-shadow: 14px 1px 53px black;
-    background-color: white; /*Remove later */
-}
-nav p{
-    display: inline;
-    font-size: 2.3rem;
-    font-weight: bold;
-    margin:0.5rem;
-    margin-left: 2.5rem;
-    margin-top: 1rem;
-}
-.nav-links{
-    margin:0.75rem;
-    /* margin:0 ; */
-    padding:0;
-    margin-right: 5rem;
-} 
-
-.nav-links a{
-    margin-right: 2rem;
-    text-decoration: none;
-    font-size: 1.3rem;
-}
-.nav-links button{
-    padding:0.7rem;
-    color: rgb(255, 255, 255);
-    background-color: rgb(194, 0, 194);
-    border: solid 1px rgb(194, 0, 194);
-    border-radius: 25px;
-    font-size: 1.3rem;
-    margin-left: 6rem;
-}
-/* SECTIONS */
-
-
-
-.introduction, .explanation, .sheets{
-    width: 100vw;
-    height: 100vh;
-    /* border-top: solid rgb(255, 255, 255) 1px; */
-    background: linear-gradient(-200deg,  white 0%, white 10%, rgb(115, 73, 171) 85%, rgb(71, 38, 124) 95%);
-}
-.introduction h2{
-    padding-top: 10rem;
-    font-size: 5rem;
-    margin-left:6rem;
-    color: rgb(40, 0, 40);
-}
-.introduction p{
-    /* width:30rem; */
-    margin:3rem 6rem;
-    color: rgb(48, 17, 55);
-    font-size: 1.5rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.introduction button{
-    background-color: rgb(137, 29, 166);
-    color: rgb(225, 225, 225);
-    font-size: 1.2rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border: none;
-    outline: none;
-    padding:1rem;
-    margin-left:6rem;
-    border-radius: 25px;
-}
-
-.explanation{
-    background: linear-gradient(-340deg,  white 0%, white 10%, rgb(115, 73, 171) 85%, rgb(71, 38, 124) 95%);
-
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.explanation h2, .sheets h2{
-    text-align: center;
-    padding-top: 10rem;
-    font-size: 4rem;
-    color: rgb(35, 2, 42);
-    /* color: white; */
-    /* text-shadow: 3px 3px 13px rgb(48, 17, 55); */
-}
-.explanation p{
-    text-align: left;
-    width:92.5vw;
-    background-color: rgb(76, 12, 92);
-    color: white;
-    margin-top: 5rem;
-    padding:5rem;
-    font-size: 1.5rem;
-}
-.explanation p span{
-    color: rgb(230, 60, 162)
-}
-.concept-wrapper{
-    width:100%;
-    margin-top: 5rem;
-    /* padding:1rem; */
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.concept-wrapper div{
-    background-color: rgb(76, 12, 92);
-}
-.concept-wrapper h3{
-    margin: 1rem;
-    background-color: white;
-}
