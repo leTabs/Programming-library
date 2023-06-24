@@ -15,9 +15,6 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #3ba2e7;
   }
-
-
-
 html *{
     padding: 0;
     margin: 0;
@@ -66,7 +63,16 @@ nav p{
     border: solid 1px rgb(194, 0, 194);
     border-radius: 25px;
     font-size: 1.3rem;
+    margin-right: 0.5rem;
+    transition: 300ms;
+}
+.nav-links button:first-child{
     margin-left: 6rem;
+}
+.nav-links button:hover{
+    color: rgb(194, 0, 194);
+    background-color: white;
+    cursor: pointer;
 }
 /* SECTIONS */
 
@@ -101,8 +107,12 @@ nav p{
     padding:1rem;
     margin-left:6rem;
     border-radius: 25px;
+    transition: 300ms;
 }
-
+.introduction button:hover{
+    background-color: rgb(61, 24, 71);
+    cursor: pointer;
+}
 .explanation{
     background: linear-gradient(-340deg,  white 0%, white 10%, rgb(115, 73, 171) 85%, rgb(71, 38, 124) 95%);
 
