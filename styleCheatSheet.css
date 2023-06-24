@@ -133,15 +133,17 @@ nav p{
     margin-top: 5rem;
     display: grid;
     grid-template-columns: 3fr 2fr;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .concept-wrapper p{
     margin: 4rem 0 0 0;
     padding:3rem;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: white;
     background-color: rgb(76, 12, 92);
     box-shadow: -13px 5px 20px black;
-
+    height: 6.5rem;
+    text-align: left;
 }
 .concept-wrapper div{
     text-align: center;
@@ -150,6 +152,7 @@ nav p{
     margin-right: 10rem;
     background: transparent;
     box-shadow: 13px 15px 25px 1px black;
+    height:20rem;
 
 }
 .concept-wrapper button{
@@ -160,13 +163,13 @@ nav p{
     border: none;
     transition: 300ms;
     background: transparent;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-bottom: solid 1px;
     border-right: solid 1px;
 }
 .concept-wrapper button:hover{
     transform: scale(110%);
-    background-color: rgb(152, 1, 135);
+    border: solid 1px;
     box-shadow: 3px 3px 20px black;
-    color: rgb(0, 255, 255)
+    color: rgb(3, 87, 80);
+    cursor: pointer;
 }
