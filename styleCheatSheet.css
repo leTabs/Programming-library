@@ -131,10 +131,8 @@ nav p{
 .concept-wrapper{
     width:100%;
     margin-top: 5rem;
-    /* padding:1rem; */
     display: grid;
     grid-template-columns: 3fr 2fr;
-    /* border: solid white 1px */
 }
 .concept-wrapper p{
     margin: 4rem 0 0 0;
@@ -150,26 +148,25 @@ nav p{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-right: 10rem;
-    border: solid 1px rgb(76, 12, 92);
-    background-color: rgb(76, 12, 92);
+    background: transparent;
     box-shadow: 13px 15px 25px 1px black;
 
 }
 .concept-wrapper button{
     margin: 1rem;
-    color: rgb(255, 255, 255);
-    /* border: solid 1px red; */
-    /* box-shadow: 3px 3px 3px black ; */
-    /* width:7rem; */
-    padding:1rem;
-    font-size: 1.5rem;
+    color: rgb(0, 47, 69);
+    font-weight: bold;
+    font-size: 1.7rem;
     border: none;
-    /* border-radius: 20px; */
-    /* background-color: rgb(119, 10, 97); */
     transition: 300ms;
     background: transparent;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
 }
 .concept-wrapper button:hover{
     transform: scale(110%);
-    background-color: rgb(188, 53, 161);
+    background-color: rgb(152, 1, 135);
+    box-shadow: 3px 3px 20px black;
+    color: rgb(0, 255, 255)
 }
