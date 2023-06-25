@@ -2,49 +2,89 @@ const chapters = document.querySelector('.chapters')
 const context = document.querySelector('.context')
 
 const basics = [
-    'Tags',
-    'Elements',
+    'HTML Tags',
+    'HTML Elements',
+    'HTML Attributes',
     'Page Structure',
-    'Attributes',
     'Comments'
 ]
-const tagTypes = [
-    'headings', 
-    'paragraphs',
-    'span',
-    'text-decoration tags',
-    'lists',
-    'linking tags',
-    'media tags'
+const movingForward = [
+  'Text',
+  'Lists',
+  'Linking Tags',
+  'Media',
+  'Input & Forms',
+  'Tables',
+  'Semantic HTML',
+  'File Paths',
+  'Entities'
+]
+const additionaly = [
+  'APIs',
+  'CSS',
+  'JavaScript',
+]
+const library = [
+  'Tags List',
+  'Attributes List',
+  'Entities List',
+  'Matching Patterns' 
 ]
 function list(){
-    chapters.innerHTML+= `<h1>Introduction</h1><hr>`
-    chapters.innerHTML += `<h3>Basics</h3>`
+    chapters.innerHTML+= `<h3>Introduction</h3><hr/>`
+    chapters.innerHTML+= '<p>What is HTML ?</p>'
+    chapters.innerHTML += `<h3>Basics</h3><hr/>`
     for(item in basics){
         chapters.innerHTML +=  `<p class="chapterNames basic${item}">${basics[item]}</p>`
     }
-    chapters.innerHTML += '<h3>Common Tag Types</h3>'
-    for(item in tagTypes){
-        chapters.innerHTML +=  `<p class="chapterNames tagTypes${item}">${tagTypes[item]}</p>`
+    chapters.innerHTML += '<h3>Moving Forward</h3><hr/>'
+    for(item in movingForward){
+        chapters.innerHTML +=  `<p class="chapterNames movingF${item}">${movingForward[item]}</p>`
     }
-    chapters.innerHTML += `<h3>Data Submission</h3> 
-    <p class="chapterNames fni">Form s & Input</p>`
-    chapters.innerHTML += `<h3>Data representation</h3>
-    <p class="chapterNames tables">Tables</p>`
-    
+    chapters.innerHTML += `<h3>Additionaly</h3><hr/>`
+    for(item in additionaly){
+      chapters.innerHTML += `<p class="chapterNames additionaly${item}">${additionaly[item]}</p>`
+    }
+    chapters.innerHTML += `<h3>Library</h3><hr/>`
+    for(item in library){
+      chapters.innerHTML +=  `<p class="chapterNames library${item}">${library[item]}</p>`
+    }
 }
 list()
 
-/*
+const buttonSection= function(previous, next){
+  return `<div class="container-btn">
+  <hr />
+  <button>
+      <i>Previous Page</i>
+      <br />
+      ${previous}
+  </button>
+  <button>
+      <i>Next Page</i>
+      <br />
+      ${next}
+  </button>
+  <hr />
+</div>`
+}
+
 context.innerHTML = `
-<h1>Introduction</h1>
-<p>HTML stands for HyperText Markup Language. HTML allows for the structuring of
-     web pages and the definition of their content. HTML structures the web pages
-      by using tags and elements, such as, paragraphs, lists, headings etc. The 
-      combination of all the tags and elements results to the creation the page’s
-       structure.</p>
+<h1>What is HTML5 ?</h1>
+<p> <span class="paragraph-space"></span>HTML stands for HyperText Markup Language, is a fundamental language 
+    for structuring web pages and defining their content. It achieves this
+    by utilizing tags and elements, such as, paragraphs, lists, headings and 
+    more. <br />
+    <span class="paragraph-space"></span>
+    By combining these tags and elements, web developers create the desired 
+    structure of a web page.
+    <br /> <br />
+    HTML5 is the latest version of HTML.
+</p>
+${buttonSection('Home', 'HTML Tags')}
 `
-*/
+
+
 const basic0 = document.querySelector('.basic0')
 basic0.addEventListener('click', ()=>{
     context.innerHTML = `
