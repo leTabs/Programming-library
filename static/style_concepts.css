@@ -104,3 +104,26 @@
     border-color: rgb(125, 0, 86);
     cursor: pointer
 }
+.context h2{
+    margin-left: 4rem;
+    font-size: 2.5rem;
+    color: rgb(40, 0, 40);
+    padding-bottom:0.5rem;
+    border-bottom: 1px black solid;
+    width:90%;
+}
+.context table{
+    margin:2rem 0 3rem 4rem;
+    text-align: center;
+    width:90%;
+}
+.context th{
+    font-size: 1.7rem;
+    padding:0.5rem;
+    background-color: rgba(250, 159, 242, 0.505);
+}
+.context td{
+    padding:0.6rem 0 ;
+    font-size: 1.4rem;
+    background-color: rgba(159, 244, 250, 0.505);
+}
