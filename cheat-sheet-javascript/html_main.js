@@ -146,43 +146,47 @@ basic0.addEventListener('click', ()=>{
 const basic1 = document.querySelector('.basic1')
 basic1.addEventListener('click', ()=>{
     context.innerHTML = ` 
-    <h1>Elements</h1>
+    <h1>HTML Elements</h1>
     <p>
-        Elements are the components of web pages and are created by using the HTML tags. Elements can contain information, like text images etc. 
-They can also include “Attributes” that provide additional information to the element or alter the element’s behavior.
+       Elements are the components of web pages and are created by using the HTML tags. 
+       Elements can contain information, like text images etc.<br /> <br />
+       They can also include “attributes” that provide additional information to the element or
+       alter the element’s behavior.
     </p>
-    <h2>Inline elements</h2>
-    <p>
-        There are inline elements and block elements.
-Inline elements appear to the website next to other elements in the webpage, covering only as much width as they need so that they fit horizontally.
-    </p>
-    <h2>Block elements</h2>
-    <p>
-        Block elements start on a new line. In addition,
-         the browsers will automatically add some margin (space) around the element.
-    </p>
-    <h2>Element examples</h2>
+    <h2>Element examples:</h2>
     <table>
-  <tr>
-    <th>Element</th>
-  </tr>
-  <tr>
-    <td>
-      &lt;h1&gt;Welcome&lt;/h1&gt;<br>
-      &lt;p&gt;Hello, world.&lt;/p&gt;
-    </td>
-  </tr>
-  <tr>
-    <td>
-      &lt;div&gt;<br>
-      &nbsp;&nbsp;&nbsp;&lt;h1&gt;Welcome&lt;/h1&gt;<br>
-      &nbsp;&nbsp;&nbsp;&lt;p&gt;Hello, world&lt;/p&gt;<br>
-      &nbsp;&nbsp;&nbsp;&lt;br/&gt;<br>
-      &lt;/div&gt;
-    </td>
-  </tr>
-</table>
-
+     <tr>
+       <th>Element</th>
+       <th>Implementation</th>
+     </tr>
+     <tr>
+       <td>Heading</td>
+       <td>&lt;h1&gt;Welcome&lt;/h1&gt;</td>
+     </tr>
+     <tr>
+       <td>Paragraph</td>
+       <td>&lt;p&gt;Hello, world.&lt;/p&gt;</td>
+     </tr>
+     <tr>
+       <td>Button</td>
+       <td>
+         &lt;button&gt;Click Me&lt;/button&gt;
+       </td>
+     </tr>
+   </table>
+   <p>
+     There are inline elements and block elements.
+   </p>
+     <ul>
+     <li>
+       <b>Inline elements</b> appear to the website next to other elements,
+       covering only as much width as they need so that they fit horizontally.
+     </il>
+     <li>
+       <b>Block elements</b> appear to the website on a new line.
+     </li>
+     </ul>
+    ${buttonSection('HTML Tags', 'HTML Attributes')}
     `})
 
 
