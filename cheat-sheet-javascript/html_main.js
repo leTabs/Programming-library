@@ -51,7 +51,6 @@ function list(){
     }
 }
 list()
-
 const buttonSection= function(previous, next){
   return `<div class="container-btn">
   <hr />
@@ -68,7 +67,7 @@ const buttonSection= function(previous, next){
   <hr />
 </div>`
 }
-
+/*
 context.innerHTML = `
 <h1>What is HTML5 ?</h1>
 <p> <span class="paragraph-space"></span>HTML stands for HyperText Markup Language, is a fundamental language 
@@ -83,50 +82,64 @@ context.innerHTML = `
 </p>
 ${buttonSection('Home', 'HTML Tags')}
 `
-
+*/
 
 const basic0 = document.querySelector('.basic0')
 basic0.addEventListener('click', ()=>{
     context.innerHTML = `
-    <h1>Tags</h1>
+    <h1>HTML Tags</h1>
     <p>
-        HTML tags define the structure and appearance of the page’s components called “Elements”. 
-        They consist of two angle brackets (“< >”) that surround an html keyword which dictates 
-        the type of tag that is created. Html tags encapsulate content or provide content and
-         instruct the web browser on how to render the elements on the web page. 
+        <span class="paragraph-space"></span>
+        HTML tags define the structure and appearance of the page’s components, 
+        called “Elements”. 
+        Tags consist of two angle brackets (“&lt; &gt;”) 
+        that surround an html keyword which dictates the type of tag that is created. 
+        Html tags encapsulate content or provide content and instruct the web browser on how to
+        render the elements on the web page.
+        <br /> <br />
+        <span class="paragraph-space"></span>
+        When tags encapsulating content, they are one of two kinds, 
+        opening tags and closing tags. The closing tags have a forward slash added to
+        them after the first angle bracket.
+        <br /><br />
+        <!-- <span class="paragraph-space"></span> -->
+        <b>Structure:</b>
+        &lt;tag-name&gt; content &lt;/tag-name&gt;
+        <br /> <br />
+        Tags that don’t encapsulate content are called self-closing tags and include a forward
+        slash before the second angle bracket. 
+        <br /><br />
+        <b>Structure:</b>
+        &lt;tag-name /&gt;
     </p>
-    <p>When tags encapsulating content, they are one of two kinds, opening tags and closing tags.
-         The closing tags have a forward slash added to them after the first angle bracket:<br />
-        (“< tag-name > content </ tag-name >”). 
-       </p>
-    <p>
-        Tags that don’t encapsulate content are called self-closing tags and include a forward slash 
-        before the second angle bracket (“< tag-name />”)
-    </p>
-    <h2>Tag examples</h2>
+    <h2>Tag examples:</h2> 
     <table>
-  <tr>
-    <th>Tag</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>&lt;div&gt;&lt;/div&gt;</td>
-    <td>Commonly used for wrapping other tags.</td>
-  </tr>
-  <tr>
-    <td>&lt;p&gt;&lt;/p&gt;</td>
-    <td>Contains text and displays it as a paragraph.</td>
-  </tr>
-  <tr>
-    <td>&lt;img /&gt;</td>
-    <td>Includes an image to the webpage.</td>
-  </tr>
-  <tr>
-    <td>&lt;br /&gt;</td>
-    <td>Creates a break-line.</td>
-  </tr>
-</table>
-
+        <tr>
+          <th>Tag</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>&lt;p&gt;&lt;/p&gt;</td>
+          <td>Contains text and displays it as a paragraph.</td>
+        </tr>
+        <tr>
+          <td>&lt;img /&gt;</td>
+          <td>Includes an image to the webpage.</td>
+        </tr>
+        <tr>
+          <td>&lt;br /&gt;</td>
+          <td>Inserts a break-line.</td>
+        </tr>
+        <tr>
+          <td>&lt;button&gt;&lt;/button&gt;</td>
+          <td>Creates a clickable button.</td>
+        </tr>
+        <tr>
+          <td>&lt;div&gt;&lt;/div&gt;</td>
+          <td>Commonly used for wrapping other tags.</td>
+        </tr>
+      </table>
+      ${buttonSection('Introduction', 'HTML Elements')}
     `
 })
 
