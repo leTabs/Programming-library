@@ -58,7 +58,14 @@
 }
 .context p{
     /* border: solid red 1px; */
-    margin:4rem;
+    margin:2rem 4rem;
+    font-size: 1.7rem;
+    text-align: justify;
+    color: rgb(48, 17, 55);
+}
+ul{
+    margin:0 8rem 2rem 8rem;
+    /* margin-top: 0; */
     font-size: 1.7rem;
     text-align: justify;
     color: rgb(48, 17, 55);
@@ -101,6 +108,7 @@
 }
 .context h2{
     margin-left: 4rem;
+    margin-top: 4rem;
     font-size: 2.5rem;
     color: rgb(40, 0, 40);
     padding-bottom:0.5rem;
