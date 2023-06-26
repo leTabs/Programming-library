@@ -126,7 +126,17 @@ ul{
     background-color: rgba(168, 11, 155, 0.505);
 }
 .context td{
-    padding:0.6rem 0 ;
+    padding:0.6rem 0.5rem ;
     font-size: 1.4rem;
     background-color: rgba(235, 235, 235, 0.405);
+}
+.context .example-section{
+    border:solid red 1px;
+    margin: 4rem;
+}
+.context .example-section img{
+    /* display: block; */
+    width: 100%;
+    margin: auto;
+    border:solid red 1px;
 }
