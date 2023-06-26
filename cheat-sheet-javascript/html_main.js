@@ -273,61 +273,42 @@ basic1.addEventListener('click', ()=>{
     const basic3 = document.querySelector('.basic3')
     basic3.addEventListener('click', ()=>{
         context.innerHTML = ` 
-    <h1>Attributes</h1>
-    <p>
-        Attributes provide information to an element or modify it (functionality & appearance). An attribute needs to be included in the opening tag of an element. An element can have multiple attributes. Attributes consist of a name and a value (the value is encapsulated to double quotes).
-        <br />
-        Note: not all attributes require a value.
-    </p>
-    <p>Purposes of attributes:</p>
-    <ul>
-        <li>Information: they can provide information witch can be used by HTML or other combinations like Css and JavaScript.</li>
-        <li>Behavior: attributes can define behaviors for elements, such as destination for hyperlinks, alternative text for accessibility purposes etc. </li>
-        <li>Appearance: certain attributes change the appearance of an element or allow for the inclusion of inline Css (Css is a Cascading language with the ability to alter elements by changing their size color etc.).</li>
-        <li>Events: event type attributes allow for the inclusion of JavaScript, by enabling a functionality when the attribute takes effect.</li>
+        <h1>Page Structure</h1>
+        <p>The combine power of all elements and tags creates the structure of the page. 
+            The structure acts as a skeleton on which can be added styling and functionality.
+            <br /><br />
+            Even the simplest of webpages must have the following three certain elements:
+        </p>
+        <ul>
+            <li> &lt;html&gt;&lt;/html&gt;</li>
+            <li> &lt;head&gt;&lt;/head&gt;</li>
+            <li> &lt;body&gt;&lt;/body&gt;</li>
         </ul>
-        <p> Values:<br />
-            Attribute values can be expressed as strings, numbers, URLs, and Booleans. The value will depend on the participating attribute and the usage of it. 
-            Attributes can allow for multiple values to be assign on them, the values will be separated by spaces.
-        </p>
         <p>
-        Aside from the standard attributes, HTML can utilize custom attributes for storing additional information. However, custom attributes may not be understood by all browsers and other included technologies. Therefore, it’s better practice to use the standard attributes.
+            Additionally, the file of the website (document) needs to start with a <!DOCTYPE html>
+            statement, informing the browser about the version of HTML that is being utilized.
+            <br /><br />
+            The html tag acts as the root element and nests all the other tags.<br /><br />
+            The head tag includes information about the page, such as the title.<br /><br />
+            The body tag nests other elements and tags that compose the content of the webpage.
         </p>
-        <h2>Attribute Examples</h2>
-        <table>
-  <tr>
-    <th>Attribute</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>Class</td>
-    <td>Gives a class name to an element (assisting technologies can use them)</td>
-  </tr>
-  <tr>
-    <td>Disabled</td>
-    <td>Excludes the functionality of an element (like a button, becomes unclickable)</td>
-  </tr>
-  <tr>
-    <td>Src</td>
-    <td>References the position of a file or the URL address.</td>
-  </tr>
-</table>
-<h2>Usage</h2>
-<table>
-  <tr>
-    <th>Usage</th>
-  </tr>
-  <tr>
-    <td>&lt;h1 class="introduction"&gt;Welcome to the page&lt;/h1&gt;</td>
-  </tr>
-  <tr>
-    <td>&lt;button disabled&gt;You can’t click me&lt;/button&gt;</td>
-  </tr>
-  <tr>
-    <td>&lt;img src="file-path-or-URL" /&gt;</td>
-  </tr>
-</table>
-
+        <h2>Simple Structure:</h2>
+        <p>Structure goes here</p>
+        <h2>HTML5</h2>
+        <p>In the latest version of HTML (HTML5) the basic structure explicitly states:</p>
+        <ol>
+            <li>The language of the webpage, usually English (in the html tag).</li>
+            <li>The title of the webpage (as the context of the title tag).</li>
+            <li>The character encoding (commonly UTF-8), in a meta tag.</li>
+            <li>The viewport control (for the capability of responsive web design 
+                especially on phone devices), in a meta tag.</li>
+        </ol>
+        <p>A page structure without context:</p>
+        <p>Goes here</p>
+        <p><b>Note:</b> A good practice is to add a tab-sized indentation to elements and tags 
+            that are nested inside of other tags. This helps on understanding the hierarchy 
+            of the components, especially as the page grows.</p>
+        ${buttonSection('HTML Attributes', 'Comments')}
     `})
 
     
