@@ -89,7 +89,7 @@ basic0.addEventListener('click', ()=>{
     context.innerHTML = `
     <h1>HTML Tags</h1>
     <p>
-        <span class="paragraph-space"></span>
+        
         HTML tags define the structure and appearance of the page’s components, 
         called “Elements”. 
         Tags consist of two angle brackets (“&lt; &gt;”) 
@@ -97,7 +97,6 @@ basic0.addEventListener('click', ()=>{
         Html tags encapsulate content or provide content and instruct the web browser on how to
         render the elements on the web page.
         <br /> <br />
-        <span class="paragraph-space"></span>
         When tags encapsulating content, they are one of two kinds, 
         opening tags and closing tags. The closing tags have a forward slash added to
         them after the first angle bracket.
@@ -380,11 +379,27 @@ basic1.addEventListener('click', ()=>{
     ${buttonSection('Comments', 'Lists')}
     `})
 
-    const tagTypes1 = document.querySelector('.tagTypes1')
-    tagTypes1.addEventListener('click', ()=>{
-    context.innerHTML = `            <h1>Paragraphs</h1>
-<p>The paragraph tag is used to display large bodies of text such as articles, explanations etc.</p>
-<p> Structure: < p > Some text < /p ></p>`    
+    const movingF1 = document.querySelector('.movingF1')
+    movingF1.addEventListener('click', ()=>{
+    context.innerHTML = `
+    <h1>List tags</h1>
+    <p>List tags create lists of items with context.
+        <br /><br />
+        There are two kinds of lists:
+    </p>
+    <ul>
+        <li>Ordered (each item is indexed), defined by the ol tag (&lt;ol&gt;&lt;/ol&gt;).</li>
+        <li>Unordered (the items are not indexed), defined by the ul tag (&lt;l&gt;&lt;/ul&gt;).</li>
+    </ul>
+    <p>
+        Inside the list, each item is specified with list item tag (&lt;li&gt;&lt;/li&gt;). 
+        Therefore, a list is a combination of two types of tags.
+    </p>
+    <p><b>Structure of ordered list:</b></p>
+    <p><b>Structure of onordered list:</b></p>
+    <h2>Usage example:</h2>
+    ${buttonSection('Tetx', 'Linking Tags')}
+    ` 
 })
 
 
