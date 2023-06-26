@@ -193,28 +193,81 @@ basic1.addEventListener('click', ()=>{
     const basic2 = document.querySelector('.basic2')
     basic2.addEventListener('click', ()=>{
         context.innerHTML = ` 
-    <h1>Page Structure</h1>
-    <p>
-        The combine power of all elements and tags creates the structure of the page. The structure acts as a skeleton on which can be added styling and functionality.<br />
-        Even the simplest of webpages need to have three certain elements: 
-    </p>
-    <ul>
-        <li>< html > < /html ></li>
-        <li> < head > < /head ></li>
-        <li> < body > < /body ></li>
-    </ul>
-    <p>
-        And the file of the website needs to start with a < !DOCTYPE html > statement, 
-        informing the browser about the version of HTML that is being utilized. 
-    </p>
-    <p>
-        The < html > tag acts as the root element and nests the “head” and “body” tags inside of it. <br />
-The < head > tag includes information about the page, such as the title. <br />
-The < body > tag nests other elements and tags that compose the content of the webpage.
+        <h1>HTML Attributes</h1>
+        <p>
+          Attributes provide information to an element or modify it (functionality & appearance).
+          An attribute needs to be included in the opening tag of an element and consists of a name 
+          and a value (the value is encapsulated to double quotes). 
+          <br /><br />
+          <b>Additionaly:</b>
+        </p>
+        <ul>
+          <li>Not all attributes require a value (the keyword alone).</li>
+          <li>Not all attributes work on all the elements.</li>
+          <li>Global attributes are the attributes that work on all elements.</li>
+          <li>An element can have multiple attributes.</li>
+        </ul>
+        <h2>Values</h2>
+        <p>
+          Attribute values can be expressed as strings, numbers, URLs, and Booleans.
+          The value will depend on the participating attribute and the usage of it.
+          Some attributes allow for multiple values to be assign on them 
+          (the values will be separated by spaces).
+        </p>
+        <p><b>Purposes of attributes:</b></p>
+        <ul>
+          <li>Information: they can provide information which can be used by HTML or
+             assisting technologies, such as CSS, JavaScript etc.
+            </li>
+          <li>Behavior: attributes can define behaviors for elements, such as destination for hyperlinks,
+            alternative text, for accessibility purposes etc.
+          </li>
+          <li>Appearance: certain attributes change the appearance of an element or allow for the
+            inclusion of inline CSS (It is a Cascading language with the ability to alter elements by changing their
+            size, color etc.).
+          </li>
+          <li>Events: event a type of attributes that allow for the inclusion of JavaScript, by enabling 
+            a functionality when the attribute takes effect.
+          </li>
+        </ul>
 
-    </p>
-    <p> Note: A good practice is to add a tab-sized indentation to elements and tags that are nested inside of other tags. This helps on understanding the hierarchy of the components, especially as the page grows.</p>
-    ` })
+        <h2>Attribute examples:</h2>
+        <table>
+          <tr>
+            <th>Attribute</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>class</td>
+            <td>Gives a class name to an element (assisting technologies can use them).</td>
+          </tr>
+          <tr>
+            <td>disabled</td>
+            <td>Excludes the functionality of an element (such as a button, becomes unclickable).</td>
+          </tr>
+          <tr>
+            <td>src</td>
+            <td>References the position of a file or the URL address.</td>
+          </tr>
+          <tr>
+            <td>width and height</td>
+            <td>Adjust the width and height of the element (the values are numbers and translated as pixels).</td>
+          </tr>
+        </table>
+        <h2>Usage example:</h2>
+        <div class="example-section">
+          <img src="examples/html_examples/attriubte_code.png" alt="Image failed to load" />
+          <p><b><u>Output:</u></b></p>
+          <img src="examples/html_examples/attriubte_output.png" alt="Image failed to load" />
+        </div>
+        <p>
+          <b>Note:</b>
+          Aside from the standard attributes, HTML can utilize custom attributes for storing additional
+          information. However, custom attributes may not be understood by all browsers and other 
+          included technologies. Therefore, it’s better practice to use the standard attributes.
+        </p>
+        ${buttonSection('HTML Elements', 'Page Structure')}
+        ` })
 
 
     const basic3 = document.querySelector('.basic3')
