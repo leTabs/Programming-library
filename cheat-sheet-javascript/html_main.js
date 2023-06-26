@@ -186,8 +186,7 @@ basic1.addEventListener('click', ()=>{
        <b>Block elements</b> appear to the website on a new line.
      </li>
      </ul>
-    ${buttonSection('HTML Tags', 'HTML Attributes')}
-    `})
+    ${buttonSection('HTML Tags', 'HTML Attributes')}`})
 
 
     const basic2 = document.querySelector('.basic2')
@@ -266,8 +265,7 @@ basic1.addEventListener('click', ()=>{
           information. However, custom attributes may not be understood by all browsers and other 
           included technologies. Therefore, it’s better practice to use the standard attributes.
         </p>
-        ${buttonSection('HTML Elements', 'Page Structure')}
-        ` })
+        ${buttonSection('HTML Elements', 'Page Structure')}` })
 
 
     const basic3 = document.querySelector('.basic3')
@@ -308,8 +306,7 @@ basic1.addEventListener('click', ()=>{
         <p><b>Note:</b> A good practice is to add a tab-sized indentation to elements and tags 
             that are nested inside of other tags. This helps on understanding the hierarchy 
             of the components, especially as the page grows.</p>
-        ${buttonSection('HTML Attributes', 'Comments')}
-    `})
+        ${buttonSection('HTML Attributes', 'Comments')}`})
 
     
     const basic4 = document.querySelector('.basic4')
@@ -326,19 +323,61 @@ basic1.addEventListener('click', ()=>{
         <p><b>Structure:</b> &lt;!-- Comment containt --&gt;</p>
         <h2>Usage example:</h2>
         <p>Example goes here</p>
-        ${buttonSection('Page Structure', 'Text')}
-        `})
+        ${buttonSection('Page Structure', 'Text')}`})
 
-    const tagTypes0 = document.querySelector('.tagTypes0')
-    tagTypes0.addEventListener('click', ()=>{
+    const movingF0 = document.querySelector('.movingF0')
+    movingF0.addEventListener('click', ()=>{
     context.innerHTML =`
-    <h1>Heading Tags</h1>
+    <h1>Text Tags</h1>
+    <h2>Headings</h2>
     <p>
-        Headings create a text hierarchy in the web page, the importance of the heading’s text is determined by the size and boldness of the text.<br />
-        There are six heading tags, each one represents a hierarchical order with the < h1 ></ h1 > indicating the most important text and the < h6 ></ h6 > the least important text.
-        <p>
-            Note: aside from visual hierarchy, headings are also used by the search engines in the search engine optimization (SEO) to understand the context of the page and its relevance.
-        </p>
+        Headings create a text hierarchy in the web page, the importance of the heading’s text is
+        determined by the size and boldness of the text.
+        <br /><br />
+        There are six heading tags, each one represents a hierarchical order with the 
+        h1 (&lt;h1&gt;&lt;/h1&gt;)
+        indicating the most important text and the h6 (&lt;h6&gt;&lt;/h6&gt;) the least important text.
+        <br /><br />
+        aside from visual hierarchy, headings are also used by the search engines in 
+        the search engine optimization (SEO) to understand the context of the page and its relevance.
+    </p>
+    <p><b>Structure:</b> &lt;h2&gt; text content &lt;/h2&gt;</p>
+    <h2>Usage example:</h2>
+    <p>Example goes here</p>
+    <hr />
+    <h2>Paragraphs</h2>
+    <p>
+        The paragraph tag is used to display large bodies of text such as articles, 
+        explanations, stories etc.
+    </p>
+    <p><b>Structure:</b> &lt;p&gt; paragraph content &lt;/p&gt; </p>
+    <h2>Usage example:</h2>
+    <p>Example goes here</p>
+    <h2>Bold Tag</h2>
+    <p>
+        The bold is used to apply the bold effect to text. Commonly, 
+        to make words stand out in a large body of text.
+    </p>
+    <p><b>Structure:</b> &lt;b&gt; bold content &lt;/b&gt;</p>
+    <h2>Italic Tag</h2>
+    <p>It is used to apply the italic effect to text. Commonly, 
+        to turn words in the italic format in a large body of text.
+    </p>
+    <p><b>Structure:</b> &lt;i&gt; italic content &lt;/i&gt;</p>
+    <h2>Uderline Tag</h2>
+    <p>
+        It is used to underline text. Commonly, 
+        to underline specific text withing a large body of text.
+    </p>
+    <p><b>Structure:</b> &lt;u&gt; underlin content &lt;/u&gt;</p>
+    <h2>Delete Tag</h2>
+    <p>
+        It’s used to line-cross text. Commonly to convey the removal a word or a sentence.
+    </p>
+    <p><b>Structure:</b> &lt;del&gt; delete content &lt;/del&gt;</p>
+    <h2>Usage example:</h2>
+    <p>Example goes here</p>
+    ${buttonSection('Comments', 'Lists')}
     `})
 
     const tagTypes1 = document.querySelector('.tagTypes1')
