@@ -63,7 +63,7 @@
     text-align: justify;
     color: rgb(48, 17, 55);
 }
-ul{
+ul, ol{
     margin:0 8rem 2rem 8rem;
     /* margin-top: 0; */
     font-size: 1.7rem;
