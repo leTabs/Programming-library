@@ -317,19 +317,16 @@ basic1.addEventListener('click', ()=>{
         context.innerHTML = ` 
         <h1>Comments</h1>
         <p>
-        Comments are context of the HTML document that don’t provide any functionality to the page. Comments are used to add a description to the code for the programmer or other programmers, also they prevent a block of code to be included to the page while writing and fixing code.  The comments can cover form
-         parts of a single line to multiple lines. The format is  <!-- comment goes here -->.
+            Comments are context of the HTML document that don’t provide any functionality to 
+            the page. Comments are used to add a description to the code for the programmer or 
+            other programmers, also they prevent the inclusion of a block of code to the page
+            while writing and fixing code.  The comments can cover form parts of a single line 
+            or multiple lines. 
         </p>
-        <h2>Comment example</h2>
-        <table>
-  <tr>
-    <th>Comment</th>
-  </tr>
-  <tr>
-    <td>&lt;!-- This is a comment --&gt;</td>
-  </tr>
-</table>
-
+        <p><b>Structure:</b> &lt;!-- Comment containt --&gt;</p>
+        <h2>Usage example:</h2>
+        <p>Example goes here</p>
+        ${buttonSection('Page Structure', 'Text')}
         `})
 
     const tagTypes0 = document.querySelector('.tagTypes0')
