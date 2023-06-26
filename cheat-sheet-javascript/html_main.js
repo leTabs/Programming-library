@@ -403,13 +403,47 @@ basic1.addEventListener('click', ()=>{
 })
 
 
-const tagTypes2 = document.querySelector('.tagTypes2')
-tagTypes2.addEventListener('click', ()=>{
-context.innerHTML = `<h1>Span</h1>
+const movingF2 = document.querySelector('.movingF2')
+movingF2.addEventListener('click', ()=>{
+context.innerHTML = `
+<h1>Linking Tags</h1>
 <p>
-    Holds text, usually small pieces of text. Commonly, to target specific text inside a larger text body, like a paragraph.
-    <p>Structure: < span> Some text </ span> </p>
-</p>`})
+    Linking tags are the tags that reference the URL address of a website, 
+    a portion of the website or the position of a file.
+</p>
+<h2>Anchor Tags:</h2>
+<p>Anchor tags are used to navigate the user to a different website, by referencing the 
+    URL address of the website of interest as a value to the href attribute or to navigate 
+    the user to a specific part of the website by referencing the value of the id attribute 
+    of the element of interest as a value to the href attribute and prefixed with an 
+    octothorpe sign (#).
+</p>
+<p><b>Note:</b>
+    the anchor tag does not work without the href attribute. Also, it has the ability 
+    to nest other elements inside it or text that function as descriptions. 
+    The target attribute with the value of “_blank” will ensure that the browser 
+    will return to the webpage tab, after the anchor target tab closes.
+</p>
+<p><b>Structure:</b> <br /> 
+    &lt;a href=”url-address”&gt;
+     Description 
+     &lt;/a&gt; <br /> <br />
+    And <br /> <br />
+    &lt;a href=”element-id”&gt; Description &lt;/a&gt;
+</p>
+<h2>Usage example:</h2>
+<h2>Link Tag</h2>
+<p>
+    Link tags are used to reference the file path or location of a file that is combined 
+    with the webpage, it can also reference URL addresses. In addition, the link tag specifies 
+    the relationship of that file and  works by utilizing the href and rel attributes.
+    <br /><br >
+    The link tag is placed in the head portion of the web page, and it is a self-closing tag.
+</p>
+<p><b>Structure:</b> &lt;link rel=”the-relationship” href=”element-id”&gt;</p>
+<h2>Usage example:</h2>
+${buttonSection('List Tags', 'Media')}
+`})
 
 
 const tagTypes3 = document.querySelector('.tagTypes3')
