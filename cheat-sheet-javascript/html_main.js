@@ -1236,6 +1236,486 @@ ${buttonSection('JavaScript', 'Attribute List')}
   `
 })
 
+const library1 = document.querySelector('.library1')
+library1.addEventListener('click', ()=>{
+  context.innerHTML = `
+  <h1>HTML Attribute List</h1>
+  <table>
+  <thead>
+    <tr>
+      <th>Attribute</th>
+      <th>Tags</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>accept</td>
+      <td>input</td>
+      <td>Specifies the type of file that the server accepts [type="file"]</td>
+    </tr>
+    <tr>
+      <td>accept-charset</td>
+      <td>form</td>
+      <td>Specifies the character encodings that are for the form submission</td>
+    </tr>
+    <tr>
+      <td>accesskey</td>
+      <td>Global Attribute</td>
+      <td>Specifies where to send the form-data when a form is submitted</td>
+    </tr>
+    <tr>
+      <td>alt</td>
+      <td>area, img, input</td>
+      <td>Specifies an alternate text when the original element fails to display</td>
+    </tr>
+    <tr>
+      <td>async</td>
+      <td>Script</td>
+      <td>Allows the script to execute asynchronously</td>
+    </tr>
+    <tr>
+      <td>autocomplete</td>
+      <td>form, input</td>
+      <td>Manages the element's autocomplete option</td>
+    </tr>
+    <tr>
+      <td>autofocus</td>
+      <td>button, input, select, textarea</td>
+      <td>The element is focused automatically after the page loads</td>
+    </tr>
+    <tr>
+      <td>autoplay</td>
+      <td>audio, video</td>
+      <td>The video or audio will play automatically after the page loads</td>
+    </tr>
+    <tr>
+      <td>charset</td>
+      <td>meta, script</td>
+      <td>Specifies the character encoding</td>
+    </tr>
+    <tr>
+      <td>checked</td>
+      <td>input</td>
+      <td>Pre-selects the input element after the page loads</td>
+    </tr>
+    <tr>
+      <td>cite</td>
+      <td>blockquote, del, ins, q</td>
+      <td>Specifies a URL that explains the quote/deleted/inserted text</td>
+    </tr>
+    <tr>
+      <td>class</td>
+      <td>Global attribute</td>
+      <td>Specifies one or more class-names for an element</td>
+    </tr>
+    <tr>
+      <td>cols</td>
+      <td>textarea</td>
+      <td>Defines the width of a text area</td>
+    </tr>
+    <tr>
+      <td>colspan</td>
+      <td>td, th</td>
+      <td>Specifies the number of columns a table cell should span</td>
+    </tr>
+    <tr>
+      <td>content</td>
+      <td>meta</td>
+      <td>Gives the value associated with the http-equiv or name attribute</td>
+    </tr>
+    <tr>
+      <td>contenteditable</td>
+      <td>Global Attribute</td>
+      <td>Specifies whether the content of an element is editable or not</td>
+    </tr>
+    <tr>
+      <td>controls</td>
+      <td>audio, video</td>
+      <td>Adds controls to the video and audio elements</td>
+    </tr>
+    <tr>
+      <td>coords</td>
+      <td>area</td>
+      <td>Specifies the coordinates of the area</td>
+    </tr>
+    <tr>
+      <td>data</td>
+      <td>object</td>
+      <td>Specifies the URL of the resource used by the object</td>
+    </tr>
+    <tr>
+      <td>data-*</td>
+      <td>Global attributes</td>
+      <td>Stores custom data, private to the page or application</td>
+    </tr>
+    <tr>
+      <td>datetime</td>
+      <td>del, ins, time</td>
+      <td>Specifies the date and time</td>
+    </tr>
+    <tr>
+      <td>default</td>
+      <td>track</td>
+      <td>Specifies timed text track for media elements, allowing the inclusion of additional textual info</td>
+    </tr>
+    <tr>
+      <td>defer</td>
+      <td>script</td>
+      <td>Allows script execution when the page has finished parsing</td>
+    </tr>
+    <tr>
+      <td>dir</td>
+      <td>Global Attribute</td>
+      <td>Specifies the text direction for the content in an element</td>
+    </tr>
+    <tr>
+      <td>dirname</td>
+      <td>input, textarea</td>
+      <td>Allows the submission of the text direction</td>
+    </tr>
+    <tr>
+      <td>disabled</td>
+      <td>button, fieldset, input, optgroup, option, select, textarea</td>
+      <td>Excludes the functionality of an element</td>
+    </tr>
+    <tr>
+      <td>download</td>
+      <td>a, area</td>
+      <td>Download the target when clicked</td>
+    </tr>
+    <tr>
+      <td>draggable</td>
+      <td>Global Attribute</td>
+      <td>Specifies whether an element is draggable or not</td>
+    </tr>
+    <tr>
+      <td>enctype</td>
+      <td>form</td>
+      <td>Specifies how the form-data should be encoded when submitting</td>
+    </tr>
+    <tr>
+      <td>for</td>
+      <td>label, output</td>
+      <td>Specifies the element(s) a label or calculation is bound to</td>
+    </tr>
+    <tr>
+      <td>form</td>
+      <td>button, fieldset, input, label, meter, object, output, select, textarea</td>
+      <td>Specifies the name of the form the element belongs to</td>
+    </tr>
+    <tr>
+      <td>formaction</td>
+      <td>button, input</td>
+      <td>Defines where to send the form-data after it is submitted [type="submit"]</td>
+    </tr>
+    <tr>
+      <td>headers</td>
+      <td>td, th</td>
+      <td>Specifies one or more header cells a cell is related to</td>
+    </tr>
+    <tr>
+      <td>height</td>
+      <td>canvas, embed, iframe, img, input, object, video</td>
+      <td>Defines the height of the element</td>
+    </tr>
+    <tr>
+      <td>hidden</td>
+      <td>Global Attribute</td>
+      <td>Specifies that an element is not yet or no longer relevant</td>
+    </tr>
+    <tr>
+      <td>high</td>
+      <td>meter</td>
+      <td>Specifies the range that is considered to be a high value</td>
+    </tr>
+    <tr>
+      <td>href</td>
+      <td>a, area, base, link</td>
+      <td>Defines the URL where a file or other data is located</td>
+    </tr>
+    <tr>
+      <td>hrefflang</td>
+      <td>a, area, link</td>
+      <td>Specifies the language of the linked document</td>
+    </tr>
+    <tr>
+      <td>http-equiv</td>
+      <td>meta</td>
+      <td>Provides an HTTP header for the info or value of the content attribute</td>
+    </tr>
+    <tr>
+      <td>id</td>
+      <td>Global Attribute</td>
+      <td>Specifies a unique id for an element</td>
+    </tr>
+    <tr>
+      <td>ismap</td>
+      <td>img</td>
+      <td>Specifies an image as a server-side image map</td>
+    </tr>
+    <tr>
+      <td>kind</td>
+      <td>track</td>
+      <td>Specifies the kind of the text track</td>
+    </tr>
+    <tr>
+      <td>label</td>
+      <td>track, option, optgroup</td>
+      <td>Specifies the title of the text track, option, or optgroup</td>
+    </tr>
+    <tr>
+      <td>lang</td>
+      <td>Global Attribute</td>
+      <td>Specifies the language of the element's content</td>
+    </tr>
+    <tr>
+      <td>list</td>
+      <td>input</td>
+      <td>Refers to a datalist element that contains predefined options for an input element</td>
+    </tr>
+    <tr>
+      <td>loop</td>
+      <td>audio, video</td>
+      <td>Replays the video or audio after it finishes</td>
+    </tr>
+    <tr>
+      <td>low</td>
+      <td>meter</td>
+      <td>Specifies a range that is considered to be a low value</td>
+    </tr>
+    <tr>
+      <td>max</td>
+      <td>input, meter, progress</td>
+      <td>Specifies the maximum value</td>
+    </tr>
+    <tr>
+      <td>maxlength</td>
+      <td>input, textarea</td>
+      <td>Specifies the maximum number of characters allowed in an element</td>
+    </tr>
+    <tr>
+      <td>media</td>
+      <td>a, area, link, source, style</td>
+      <td>Specifies what media/device the linked document is optimized for</td>
+    </tr>
+    <tr>
+      <td>method</td>
+      <td>form</td>
+      <td>Specifies the HTTP method to use when sending form-data</td>
+    </tr>
+    <tr>
+      <td>min</td>
+      <td>input, meter</td>
+      <td>Defines a minimum value</td>
+    </tr>
+    <tr>
+      <td>multiple</td>
+      <td>input, select</td>
+      <td>Specifies that a user can enter more than one value</td>
+    </tr>
+    <tr>
+      <td>muted</td>
+      <td>video, audio</td>
+      <td>Specifies that the audio output of the video should be muted</td>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td>button, fieldset, form, iframe, input, map, meta, object, output, param, select, textarea</td>
+      <td>Specifies the name of the element</td>
+    </tr>
+    <tr>
+      <td>novalidate</td>
+      <td>form</td>
+      <td>Specifies that the form should not be validated when submitted</td>
+    </tr>
+    <tr>
+      <td>open</td>
+      <td>details</td>
+      <td>Specifies that the details should be visible to the user</td>
+    </tr>
+    <tr>
+      <td>optimum</td>
+      <td>meter</td>
+      <td>Specifies what value is the optimal value for the gauge</td>
+    </tr>
+    <tr>
+      <td>pattern</td>
+      <td>input</td>
+      <td>A regular expression that an input element's value is checked against</td>
+    </tr>
+    <tr>
+      <td>placeholder</td>
+      <td>input, textarea</td>
+      <td>Specifies a short hint that describes the expected value of the element</td>
+    </tr>
+    <tr>
+      <td>poster</td>
+      <td>video</td>
+      <td>Specifies an image to be shown while the video is downloading or until the user hits the play button</td>
+    </tr>
+    <tr>
+      <td>preload</td>
+      <td>audio, video</td>
+      <td>Specifies if and how the author thinks the element should be loaded when the page loads</td>
+    </tr>
+    <tr>
+      <td>readonly</td>
+      <td>input, textarea</td>
+      <td>Specifies that the element is read-only</td>
+    </tr>
+    <tr>
+      <td>rel</td>
+      <td>a, area, form, link</td>
+      <td>Specifies the relationship between the current document and the linked document</td>
+    </tr>
+    <tr>
+      <td>required</td>
+      <td>input, select, textarea</td>
+      <td>Specifies that the element must be filled out before submitting the form</td>
+    </tr>
+    <tr>
+      <td>reversed</td>
+      <td>ol</td>
+      <td>The order of the list should be descending</td>
+    </tr>
+    <tr>
+      <td>rows</td>
+      <td>textarea</td>
+      <td>Specifies the number of lines in a text area</td>
+    </tr>
+    <tr>
+      <td>rowspan</td>
+      <td>td, th</td>
+      <td>Specifies the number of rows a cell should span</td>
+    </tr>
+    <tr>
+      <td>sandbox</td>
+      <td>iframe</td>
+      <td>Enables an extra set of restrictions for the content in an iframe</td>
+    </tr>
+    <tr>
+      <td>scope</td>
+      <td>th</td>
+      <td>Specifies whether a header cell is a header for a column, row, or group of columns or rows</td>
+    </tr>
+    <tr>
+      <td>selected</td>
+      <td>option</td>
+      <td>Specifies that an option should be preselected when the page loads</td>
+    </tr>
+    <tr>
+      <td>shape</td>
+      <td>area</td>
+      <td>Specifies the shape of the area</td>
+    </tr>
+    <tr>
+      <td>size</td>
+      <td>input, select</td>
+      <td>Specifies the width in characters (input) or the number of visible options (select)</td>
+    </tr>
+    <tr>
+      <td>sizes</td>
+      <td>img, link, source</td>
+      <td>Specifies the size of the linked resource</td>
+    </tr>
+    <tr>
+      <td>span</td>
+      <td>col, colgroup</td>
+      <td>Specifies the number of columns to span</td>
+    </tr>
+    <tr>
+      <td>spellcheck</td>
+      <td>Global Attribute</td>
+      <td>Specifies whether the element is to have its spelling and grammar checked or not</td>
+    </tr>
+    <tr>
+      <td>src</td>
+      <td>audio, embed, iframe, img, input, script, source, track, video</td>
+      <td>Specifies the URL of the media file</td>
+    </tr>
+    <tr>
+      <td>srcdoc</td>
+      <td>iframe</td>
+      <td>Specifies the HTML content of the page to show in the iframe</td>
+    </tr>
+    <tr>
+      <td>srclang</td>
+      <td>track</td>
+      <td>Specifies the language of the track text data (in kind="subtitles")</td>
+    </tr>
+    <tr>
+      <td>srcset</td>
+      <td>img, source</td>
+      <td>Specifies the URL of the image to use in different situations</td>
+    </tr>
+    <tr>
+      <td>start</td>
+      <td>ol</td>
+      <td>Specifies the start value of an ordered list</td>
+    </tr>
+    <tr>
+      <td>step</td>
+      <td>input</td>
+      <td>Specifies the legal number intervals for an input field</td>
+    </tr>
+    <tr>
+      <td>style</td>
+      <td>Global Attribute</td>
+      <td>Specifies an inline CSS style for an element</td>
+    </tr>
+    <tr>
+      <td>tabindex</td>
+      <td>Global Attribute</td>
+      <td>Specifies the tabbing order of an element</td>
+    </tr>
+    <tr>
+      <td>target</td>
+      <td>a, area, base, form</td>
+      <td>Specifies the target for where to open the linked document or where to submit the form</td>
+    </tr>
+    <tr>
+      <td>title</td>
+      <td>Global Attribute</td>
+      <td>Specifies extra information about an element</td>
+    </tr>
+    <tr>
+      <td>translate</td>
+      <td>Global Attribute</td>
+      <td>Specifies whether the content of an element should be translated or not</td>
+    </tr>
+    <tr>
+      <td>type</td>
+      <td>a, button, embed, input, link, menu, object, script, source, style</td>
+      <td>Specifies the type of an element</td>
+    </tr>
+    <tr>
+      <td>usemap</td>
+      <td>img, object</td>
+      <td>Specifies an image as a client-side image map</td>
+    </tr>
+    <tr>
+      <td>value</td>
+      <td>Button, input, li, option, meter, progress, param</td>
+      <td>Specifies the value of the element</td>
+    </tr>
+    <tr>
+      <td>width</td>
+      <td>canvas, embed, img, input, object, video</td>
+      <td>Specifies the width of the element</td>
+    </tr>
+    <tr>
+      <td>wrap</td>
+      <td>textarea</td>
+      <td>Specifies how the text in a text area is to be wrapped when submitted in a form</td>
+    </tr>
+  </tbody>
+  </tbody>
+</table>
+${buttonSection('Tags List', 'Entities List')}
+  `
+})
+
 const library2 = document.querySelector('.library2')
 library2.addEventListener('click', ()=>{
 context.innerHTML = `
@@ -1452,5 +1932,5 @@ context.innerHTML = `
     <td>Combination (zero or more consecutive letters followed by zero or more digits)</td>
   </tr>
 </table>
-
+${buttonSection('Entities', 'Home')}
 `})
