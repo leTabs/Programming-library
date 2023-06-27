@@ -32,7 +32,7 @@ const library = [
 ]
 function list(){
     chapters.innerHTML+= `<h3>Introduction</h3><hr/>`
-    chapters.innerHTML+= '<p>What is HTML ?</p>'
+    chapters.innerHTML+= '<p class="html_intro">What is HTML ?</p>'
     chapters.innerHTML += `<h3>Basics</h3><hr/>`
     for(item in basics){
         chapters.innerHTML +=  `<p class="chapterNames basic${item}">${basics[item]}</p>`
@@ -67,22 +67,24 @@ const buttonSection= function(previous, next){
   <hr />
 </div>`
 }
-/*
+/* */
+// <span class="paragraph-space"></span>
+document.querySelector('.html_intro').addEventListener('click', ()=>{
 context.innerHTML = `
 <h1>What is HTML5 ?</h1>
-<p> <span class="paragraph-space"></span>HTML stands for HyperText Markup Language, is a fundamental language 
+<p> HTML stands for HyperText Markup Language, is a fundamental language 
     for structuring web pages and defining their content. It achieves this
     by utilizing tags and elements, such as, paragraphs, lists, headings and 
-    more. <br />
-    <span class="paragraph-space"></span>
+    more. 
+    <br /> <br />
     By combining these tags and elements, web developers create the desired 
     structure of a web page.
     <br /> <br />
     HTML5 is the latest version of HTML.
 </p>
 ${buttonSection('Home', 'HTML Tags')}
-`
-*/
+`})
+
 
 const basic0 = document.querySelector('.basic0')
 basic0.addEventListener('click', ()=>{
@@ -402,7 +404,6 @@ basic1.addEventListener('click', ()=>{
     ` 
 })
 
-
 const movingF2 = document.querySelector('.movingF2')
 movingF2.addEventListener('click', ()=>{
 context.innerHTML = `
@@ -717,14 +718,16 @@ movingF8.addEventListener('click', ()=>{
     `
 })
 
-
-
-const tables = document.querySelector('.tables')
-tables.addEventListener('click', ()=>{
-    context.innerHTML = `<h1>Tables</h1>
-<p>
-    HTML tables are used to display organized data on the webpage. They consist of columns and row. They are created with the < table>< /table> tag, which nests other tabular tags.
-</p>
-<p>Table goes here</p>
-<p>Table goes here</p>
-<p>Structure: ...</p>`})
+const additionaly0 = document.querySelector('.additionaly0')
+additionaly0.addEventListener('click', ()=>{
+    context.innerHTML = 
+    `
+    <h1>APIs</h1>
+    <p>
+        APIs stands for “Application Program Interface” and allows the website to access and retrieve data from a database or other web services and utilize it in the representation, resulting in web pages with real-time data.
+        <br /><br />
+    <b>Note:</b> for the use of an API, a backend programming language is used to process the data (not HTML itself).
+    </p>
+    ${buttonSection('Entities', 'CSS')}
+    `
+})
