@@ -705,28 +705,16 @@ movingF7.addEventListener('click', ()=>{
   ${buttonSection('Semantic HTML', 'Entities')}
   `
 })
-const fni = document.querySelector('.fni')
-fni.addEventListener('click', ()=>{
+const movingF8 = document.querySelector('.movingF8')
+movingF8.addEventListener('click', ()=>{
     context.innerHTML = `
-    <h1>Forms and Inputs</h1>
+    <h1>Entities</h1>
     <p>
-        HTML forms are the components that allow data to be submitted by the user to the website.  The data could be text, numbers, choices from a list etc. The form element is created with the form tag (< form>< /form>), and input tags (< input />). The form tag includes attributes, necessary attributes are:
+        In HTML, entities are special characters or symbols of a specific meaning or a representation, they are used inside the html document.
     </p>
-    <p>
-        The “action” attribute: which defines the URL address or the file (and file-path) that handles the submission of the form (calculations, storing, manipulating the data etc.).
-    </p>
-    <p>
-        The “method” attribute: which defines how the data is send (“GET”, “POST”, etc.)
-    </p>
-    <h2>Inputs</h2>
-    <p>The input tags are responsible for providing a way for specifying the data that will be send.</p>
-    <p>Tables here</p>
-    <h2>Label</h2>
-    <p>The label tag is used to add descriptions to input elements. Takes the “for” attribute to associate itself with a specific input tag, the value of the “for” attribute should be the input’s value of the “id” attribute.</p>
-    <h2>Submit</h2>
-    <p>A form is submitted by an input or a button, both of the type “submit”.<br />
-        Typically, when a form is submitted, the data are sent to a server to be processed. Technologies like Python, Node.js and PHP can handle the data. They can manipulate the data, filter them, store them into a database, send it elsewhere etc.
-        </p>`
+    <p>Advice the entities list for more information on page…</p>
+    ${buttonSection('File Paths','APIs')}
+    `
 })
 
 
