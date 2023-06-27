@@ -642,31 +642,54 @@ context.innerHTML =`
 ${buttonSection('Input & Forms', 'Semantic HTML')}
 `})
 
-const tagTypes6 = document.querySelector('.tagTypes6')
-tagTypes6.addEventListener('click', ()=>{
+const movingF6 = document.querySelector('.movingF6')
+movingF6.addEventListener('click', ()=>{
 context.innerHTML =`
-<h1>Media Tags</h1>
-<h2>Images</h2>
+<h1>Semantics</h1>
 <p>
-    The image tag (img) inserts images to the webpage. It uses the search (src) attribute to determine the location of the image. The location can be a file path or a URL address on the web.   
+    HTML semantics are the practice of using markup elements to convey meaning and structure to the content of a webpage. It involves choosing the appropriate HTML tags and attributes to accurately represent the purpose and significance of different sections and elements within the page. By employing semantic html developers can enhance the accessibility, SEO (search engine optimization) and overall understanding of the document’s structures.
 </p>
-<p>
-    It is a self-closing tag, often the alternative (alt) attribute is included in the tag that displays text in the case that the image does not load. The img tag can utilize other attributes like heigh and width to adjust the image’s size, however, it’s common and usually not the best practice.
-</p>
-<h2>Videos</h2>
-<p>
-    The video tag can insert videos to the website. It uses the src attribute to determine the location of the video file. The location can be a file path or a URL address on the web. <br />
-It can also include useful attributes on it like controls (adds pause button, full screen etc. to the video), autoplay muted, witch causes the video to play automatically when the page load (while muted), “loop” that will replay the video once it’s over.
-</p>
-<h2>Audio</h2>
-<p>
-    The audio tag can insert audio files to the website. I uses the src attribute to determine the location of the audio file. The location can be a file path or a URL address on the web. It is used with the controls attribute.<br />
-Audio can include other attributes, such as loop.
-</p>
-<h2>Source</h2>
-<p>
-    The source tag is used within other media tags (video, audio), to specify alternative media sources. It is a self-closing tag. For more stable code, it can take the “type” attribute to specify the type of the media and it’s suffix.
-</p>
+<h2>Most common semantics:</h2>
+<table>
+    <tr>
+      <th>Tag</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>&lt;header&gt;</td>
+      <td>Introductory section of the page, typically containing the navigation, theme message, and other relevant information.</td>
+    </tr>
+    <tr>
+      <td>&lt;nav&gt;</td>
+      <td>The navigation part of the page (links), mainly used for site navigation.</td>
+    </tr>
+    <tr>
+      <td>&lt;main&gt;</td>
+      <td>Indicates the main content of the document, excluding headers, footers, and sidebars. Typically, there should be only one "main" element.</td>
+    </tr>
+    <tr>
+      <td>&lt;article&gt;</td>
+      <td>Represents a self-contained composition within a document, such as blogs, news, forums. Each one should be sustained independently.</td>
+    </tr>
+    <tr>
+      <td>&lt;section&gt;</td>
+      <td>Defines a generic section of content within a document. It helps organize related content into meaningful blocks.</td>
+    </tr>
+    <tr>
+      <td>&lt;aside&gt;</td>
+      <td>A section of content that isn’t directly connected to the main content, such as sidebars, pull quotes, ads, etc.</td>
+    </tr>
+    <tr>
+      <td>&lt;figure&gt; and &lt;figcaption&gt;</td>
+      <td>Used together to represent media content, such as images, diagrams, videos, with a descriptive caption.</td>
+    </tr>
+    <tr>
+      <td>&lt;footer&gt;</td>
+      <td>The footer of the document or section, often contains info like copyright notes, contact info, related links, etc.</td>
+    </tr>
+  </table>              
+<h2>Usage example:</h2>
+${buttonSection('Tables', 'File Paths')}
 `})
 const fni = document.querySelector('.fni')
 fni.addEventListener('click', ()=>{
