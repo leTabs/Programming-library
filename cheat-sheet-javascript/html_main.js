@@ -1349,3 +1349,108 @@ context.innerHTML = `
   </table>
   ${buttonSection('Attributes List', 'Match Patterns')}
 `})
+
+const library3 = document.querySelector('.library3')
+library3.addEventListener('click', ()=>{
+context.innerHTML = `
+  <h1>Matching Patterns</h1>
+  <table>
+  <tr>
+    <th>Pattern</th>
+    <th>Matches</th>
+  </tr>
+  <tr>
+    <td>[0-9]</td>
+    <td>Any single digit</td>
+  </tr>
+  <tr>
+    <td>[a-z]</td>
+    <td>Any lowercase letter</td>
+  </tr>
+  <tr>
+    <td>[A-Z]</td>
+    <td>Any uppercase letter</td>
+  </tr>
+  <tr>
+    <td>[a-zA-Z]</td>
+    <td>Any letter</td>
+  </tr>
+  <tr>
+    <td>[0-9a-fA-F]</td>
+    <td>Any hexadecimal digit (0-9, a-f, A-F)</td>
+  </tr>
+  <tr>
+    <td>[a-zA-Z0-9]</td>
+    <td>Any alphanumeric character</td>
+  </tr>
+  <tr>
+    <td>[0-9]+</td>
+    <td>One or more consecutive digits</td>
+  </tr>
+  <tr>
+    <td>[a-z]+</td>
+    <td>One or more consecutive lowercase letters</td>
+  </tr>
+  <tr>
+    <td>[A-Z]+</td>
+    <td>One or more consecutive uppercase letters</td>
+  </tr>
+  <tr>
+    <td>[a-zA-Z]+</td>
+    <td>One or more consecutive letters</td>
+  </tr>
+  <tr>
+    <td>[^0-9]</td>
+    <td>Any non-digit character</td>
+  </tr>
+  <tr>
+    <td>[^a-z]</td>
+    <td>Any non-lowercase character</td>
+  </tr>
+  <tr>
+    <td>[^A-Z]</td>
+    <td>Any non-uppercase character</td>
+  </tr>
+  <tr>
+    <td>[^a-zA-Z]</td>
+    <td>Any non-letter</td>
+  </tr>
+  <tr>
+    <td>\d</td>
+    <td>Any digit character</td>
+  </tr>
+  <tr>
+    <td>\D</td>
+    <td>Any non-digit character</td>
+  </tr>
+  <tr>
+    <td>\w</td>
+    <td>Any alphanumeric and underscore character</td>
+  </tr>
+  <tr>
+    <td>\W</td>
+    <td>Any non-alphanumeric and non-underscore character</td>
+  </tr>
+  <tr>
+    <td>\s</td>
+    <td>Any whitespace character</td>
+  </tr>
+  <tr>
+    <td>\S</td>
+    <td>Any non-whitespace character</td>
+  </tr>
+  <tr>
+    <td>.</td>
+    <td>Any single character, except a newline</td>
+  </tr>
+  <tr>
+    <td>.*</td>
+    <td>Zero or more single characters, except a newline</td>
+  </tr>
+  <tr>
+    <td>[a-zA-Z]*[0-9]*</td>
+    <td>Combination (zero or more consecutive letters followed by zero or more digits)</td>
+  </tr>
+</table>
+
+`})
