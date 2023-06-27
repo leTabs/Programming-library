@@ -731,3 +731,54 @@ additionaly0.addEventListener('click', ()=>{
     ${buttonSection('Entities', 'CSS')}
     `
 })
+
+const additionaly1 = document.querySelector('.additionaly1')
+additionaly1.addEventListener('click', ()=>{
+context.innerHTML =`
+<h1>CSS</h1>
+<p>
+    CSS stands for “Cascading Style Sheets” and is responsible of the website’s styling. Normally, HTML elements have fixed color, size, font etc. With the implementation of CSS, the presentation of the html elements can change.
+    <br /><br />
+    CSS can be implemented in three main ways.
+</p>
+<ol>
+    <li>Inline CSS</li>
+    <li>Internal CSS</li>
+    <li>External CSS</li>
+</ol>
+<p>
+    <b>Inline CSS:</b> <br />
+    The styling changes occur inside the element itself in the form of the style attribute.
+</p>
+<h2>Usage example:</h2>
+<p>
+    When CSS isn’t implemented directly to an element, it modifies elements and tags based on:
+</p>
+<ul>
+    <li>Their tag types</li>
+    <li>Their id values</li>
+    <li>Their class names</li>
+</ul>
+<p>
+    <b>Internal CSS</b><br />
+    The styling changes occur inside the head of the webpage as an element with the style tag.
+</p>
+<h2>Usage example:</h2>
+<p>
+    <b>External CSS:</b><br />
+    The styling changes occur inside a separate file with the .css suffix. The file is included to the HTML document inside the head using the link tag. Any changes to the CSS file will influence the representation of elements.
+</p>
+<h2>Usage example:</h2>
+<p>
+    <b>Note:</b>A web page can have multiple CSS files linked to it.
+    <br /><br />
+</p>
+<ul>
+    <li>Doesn’t clutter the HTML document.</li>
+    <li>Organizes the code.</li>
+    <li>Allows for easier changes and maintenance.</li>
+</ul>
+${buttonSection('APIs','JavaScript')}
+`})
+const additionaly2 = document.querySelector('.additionaly2')
+additionaly2.addEventListener('click', ()=>{})
