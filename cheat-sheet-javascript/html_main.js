@@ -805,3 +805,432 @@ additionaly2.addEventListener('click', ()=>{
   ${buttonSection('CSS','Tag List')}
   `
 })
+
+const library0 = document.querySelector('.library0')
+library0.addEventListener('click', ()=>{
+  context.innerHTML = `
+  <table>
+  <tr>
+    <th>Tag</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>&lt;a&gt;</td>
+    <td>Defines a hyperlink</td>
+  </tr>
+  <tr>
+    <td>&lt;abbr&gt;</td>
+    <td>Defines an abbreviation</td>
+  </tr>
+  <tr>
+    <td>&lt;address&gt;</td>
+    <td>Contains contact info of the owner or creator of the website</td>
+  </tr>
+  <tr>
+    <td>&lt;area&gt;</td>
+    <td>Defines an area inside of an image map</td>
+  </tr>
+  <tr>
+    <td>&lt;article&gt;</td>
+    <td>Contains an article</td>
+  </tr>
+  <tr>
+    <td>&lt;aside&gt;</td>
+    <td>Contains info and elements aside from the page content (contacts, adds etc.)</td>
+  </tr>
+  <tr>
+    <td>&lt;audio&gt;</td>
+    <td>Implements audio to the document</td>
+  </tr>
+  <tr>
+    <td>&lt;b&gt;</td>
+    <td>Applies the bold effect on text</td>
+  </tr>
+  <tr>
+    <td>&lt;base&gt;</td>
+    <td>Specifies the base URL/target for all relative URLs in a document</td>
+  </tr>
+  <tr>
+    <td>&lt;bdi&gt;</td>
+    <td>Isolates a part of text that might be formatted in a different direction from other text outside it</td>
+  </tr>
+  <tr>
+    <td>&lt;bdo&gt;</td>
+    <td>Overrides the current text direction</td>
+  </tr>
+  <tr>
+    <td>&lt;blockquote&gt;</td>
+    <td>Contains a section that is quoted from another source</td>
+  </tr>
+  <tr>
+    <td>&lt;body&gt;</td>
+    <td>Defines the document's body</td>
+  </tr>
+  <tr>
+    <td>&lt;br /&gt;</td>
+    <td>Creates a single line break</td>
+  </tr>
+  <tr>
+    <td>&lt;button&gt;</td>
+    <td>Creates a clickable button</td>
+  </tr>
+  <tr>
+    <td>&lt;canvas&gt;</td>
+    <td>Used to draw graphics, through scripting (usually JavaScript)</td>
+  </tr>
+  <tr>
+    <td>&lt;caption&gt;</td>
+    <td>Defines a table caption</td>
+  </tr>
+  <tr>
+    <td>&lt;cite&gt;</td>
+    <td>Defines the title of a work</td>
+  </tr>
+  <tr>
+    <td>&lt;code&gt;</td>
+    <td>Specifies a piece of code (doesn't add functionality)</td>
+  </tr>
+  <tr>
+    <td>&lt;col&gt;</td>
+    <td>Specifies column properties for each column within a &lt;colgroup&gt; element</td>
+  </tr>
+  <tr>
+    <td>&lt;colgroup&gt;</td>
+    <td>Specifies a group of one or more columns in a table for formatting</td>
+  </tr>
+  <tr>
+    <td>&lt;data&gt;</td>
+    <td>Adds a machine-readable translation of a given content</td>
+  </tr>
+  <tr>
+    <td>&lt;datalist&gt;</td>
+    <td>Specifies a list of pre-defined options for input controls</td>
+  </tr>
+  <tr>
+    <td>&lt;dd&gt;</td>
+    <td>Adds a description of a term in a description list</td>
+  </tr>
+  <tr>
+    <td>&lt;del&gt;</td>
+    <td>Strikes a line through a text body</td>
+  </tr>
+  <tr>
+    <td>&lt;details&gt;</td>
+    <td>Specifies additional details that the user can view or hide</td>
+  </tr>
+  <tr>
+    <td>&lt;dfn&gt;</td>
+    <td>Specifies a term that is going to be defined within the content</td>
+  </tr>
+  <tr>
+    <td>&lt;dialog&gt;</td>
+    <td>Defines a dialog box or window</td>
+  </tr>
+  <tr>
+      <td>&lt;div&gt;</td>
+      <td>Defines a section in a document</td>
+    </tr>
+    <tr>
+      <td>&lt;dl&gt;</td>
+      <td>Creates a description list</td>
+    </tr>
+    <tr>
+      <td>&lt;dt&gt;</td>
+      <td>Defines a term in a description list</td>
+    </tr>
+    <tr>
+      <td>&lt;em&gt;</td>
+      <td>Emphasizes text</td>
+    </tr>
+    <tr>
+      <td>&lt;embed&gt;</td>
+      <td>Defines a container for an external application</td>
+    </tr>
+    <tr>
+      <td>&lt;fieldset&gt;</td>
+      <td>Groups related elements in a form</td>
+    </tr>
+    <tr>
+      <td>&lt;figcaption&gt;</td>
+      <td>Defines a caption for a &lt;figure&gt; element</td>
+    </tr>
+    <tr>
+      <td>&lt;figure&gt;</td>
+      <td>Specifies self-contained content</td>
+    </tr>
+    <tr>
+      <td>&lt;footer&gt;</td>
+      <td>Defines a footer for a document or a section</td>
+    </tr>
+    <tr>
+      <td>&lt;form&gt;</td>
+      <td>Creates an HTML form for user input</td>
+    </tr>
+    <tr>
+      <td>&lt;h1&gt; - &lt;h6&gt;</td>
+      <td>Create HTML headings</td>
+    </tr>
+    <tr>
+      <td>&lt;head&gt;</td>
+      <td>Contains the document's information</td>
+    </tr>
+    <tr>
+      <td>&lt;header&gt;</td>
+      <td>Defines the header for a document or section, contains the navbar, icons, etc.</td>
+    </tr>
+    <tr>
+      <td>&lt;hr&gt;</td>
+      <td>Creates a line and indicates a thematic change in the content</td>
+    </tr>
+    <tr>
+      <td>&lt;html&gt;</td>
+      <td>Defines the root of an HTML document</td>
+    </tr>
+    <tr>
+      <td>&lt;i&gt;</td>
+      <td>Applies the italic effect on a text body</td>
+    </tr>
+    <tr>
+      <td>&lt;iframe&gt;</td>
+      <td>Defines an inline frame</td>
+    </tr>
+    <tr>
+      <td>&lt;img&gt;</td>
+      <td>Includes an image in the document</td>
+    </tr>
+    <tr>
+      <td>&lt;input&gt;</td>
+      <td>Creates an input interface for data insertion</td>
+    </tr>
+    <tr>
+      <td>&lt;ins&gt;</td>
+      <td>Defines text that has been inserted into a document</td>
+    </tr>
+    <tr>
+      <td>&lt;kbd&gt;</td>
+      <td>Defines keyboard input</td>
+    </tr>
+    <tr>
+      <td>&lt;label&gt;</td>
+      <td>Specifies a label text for an input element</td>
+    </tr>
+    <tr>
+      <td>&lt;legend&gt;</td>
+      <td>Defines a caption for a &lt;fieldset&gt; element</td>
+    </tr>
+    <tr>
+      <td>&lt;li&gt;</td>
+      <td>Specifies a list item</td>
+    </tr>
+    <tr>
+      <td>&lt;link&gt;</td>
+      <td>Defines the relationship between a document and another file and that file's URL or path location</td>
+    </tr>
+    <tr>
+      <td>&lt;main&gt;</td>
+      <td>Specifies the main content of a document</td>
+    </tr>
+    <tr>
+      <td>&lt;map&gt;</td>
+      <td>Defines an image map</td>
+    </tr>
+    <tr>
+      <td>&lt;mark&gt;</td>
+      <td>Specifies marked text (font)</td>
+    </tr>
+    <tr>
+      <td>&lt;meta&gt;</td>
+      <td>Defines metadata about an HTML document</td>
+    </tr>
+    <tr>
+      <td>&lt;meter&gt;</td>
+      <td>Creates scalar measurement within a known range</td>
+    </tr>
+    <tr>
+      <td>&lt;nav&gt;</td>
+      <td>Contains the navigation portion of the page</td>
+    </tr>
+    <tr>
+      <td>&lt;noscript&gt;</td>
+      <td>Defines alternative content for users that do not support client-side scripts</td>
+    </tr>
+    <tr>
+      <td>&lt;object&gt;</td>
+      <td>Specifies a container for an external application</td>
+    </tr>
+    <tr>
+      <td>&lt;ol&gt;</td>
+      <td>Defines an ordered list</td>
+    </tr>
+    <tr>
+      <td>&lt;optgroup&gt;</td>
+      <td>Contains a group of related options in a dropdown list</td>
+    </tr>
+    <tr>
+      <td>&lt;option&gt;</td>
+      <td>Specifies an option in a drop-down list</td>
+    </tr>
+    <tr>
+      <td>&lt;output&gt;</td>
+      <td>Defines the result of a calculation</td>
+    </tr>
+    <tr>
+      <td>&lt;p&gt;</td>
+      <td>Defines a paragraph</td>
+    </tr>
+    <tr>
+      <td>&lt;param&gt;</td>
+      <td>Defines a parameter for an object</td>
+    </tr>
+    <tr>
+      <td>&lt;picture&gt;</td>
+      <td>Creates a container for multiple image resources</td>
+    </tr>
+    <tr>
+      <td>&lt;pre&gt;</td>
+      <td>Defines preformatted text</td>
+    </tr>
+    <tr>
+      <td>&lt;progress&gt;</td>
+      <td>Represents the progress of a task</td>
+    </tr>
+    <tr>
+      <td>&lt;q&gt;</td>
+      <td>Specifies a short quotation</td>
+    </tr>
+    <tr>
+      <td>&lt;rq&gt;</td>
+      <td>Specifies the display in browsers that do not support ruby annotations</td>
+    </tr>
+    <tr>
+      <td>&lt;rt&gt;</td>
+      <td>Defines an explanation of characters (for East Asian typography)</td>
+    </tr>
+    <tr>
+      <td>&lt;ruby&gt;</td>
+      <td>Defines ruby annotation</td>
+    </tr>
+    <tr>
+      <td>&lt;r&gt;</td>
+      <td>Defines text that is no longer correct</td>
+    </tr>
+    <tr>
+      <td>&lt;samp&gt;</td>
+      <td>Specifies a sample output from a computer program</td>
+    </tr>
+    <tr>
+      <td>&lt;script&gt;</td>
+      <td>Defines client-side script (Notably, JavaScript)</td>
+    </tr>
+    <tr>
+      <td>&lt;section&gt;</td>
+      <td>Creates a section in a document</td>
+    </tr>
+    <tr>
+      <td>&lt;select&gt;</td>
+      <td>Creates a drop-down list</td>
+    </tr>
+    <tr>
+      <td>&lt;small&gt;</td>
+      <td>Defines smaller text</td>
+    </tr>
+    <tr>
+      <td>&lt;source&gt;</td>
+      <td>Specifies multiple media resources for media elements</td>
+    </tr>
+    <tr>
+      <td>&lt;span&gt;</td>
+      <td>Creates a small section in a document</td>
+    </tr>
+    <tr>
+      <td>&lt;strong&gt;</td>
+      <td>Applies the bold effect on a text body</td>
+    </tr>
+    <tr>
+      <td>&lt;style&gt;</td>
+      <td>Defines style information for a document</td>
+    </tr>
+    <tr>
+      <td>&lt;sub&gt;</td>
+      <td>Defines subscripted text</td>
+    </tr>
+    <tr>
+      <td>&lt;summary&gt;</td>
+      <td>Creates a heading for &lt;details&gt; elements</td>
+    </tr>
+    <tr>
+      <td>&lt;sup&gt;</td>
+      <td>Defines superscripted text</td>
+    </tr>
+    <tr>
+      <td>&lt;svg&gt;</td>
+      <td>Creates a container for SVG graphics</td>
+    </tr>
+    <tr>
+      <td>&lt;table&gt;</td>
+      <td>Creates a table for data representation</td>
+    </tr>
+    <tr>
+      <td>&lt;tbody&gt;</td>
+      <td>Groups the body content in a table</td>
+    </tr>
+    <tr>
+      <td>&lt;td&gt;</td>
+      <td>Creates a cell in a table</td>
+    </tr>
+    <tr>
+      <td>&lt;template&gt;</td>
+      <td>Defines a container for content that should be hidden when the page loads</td>
+    </tr>
+    <tr>
+      <td>&lt;tfoot&gt;</td>
+      <td>Groups the footer content in a table</td>
+    </tr>
+    <tr>
+      <td>&lt;th&gt;</td>
+      <td>Defines a header cell in a table</td>
+    </tr>
+    <tr>
+      <td>&lt;thead&gt;</td>
+      <td>Groups the header content in a table</td>
+    </tr>
+    <tr>
+      <td>&lt;time&gt;</td>
+      <td>Specifies a time (or datetime)</td>
+    </tr>
+    <tr>
+      <td>&lt;title&gt;</td>
+      <td>Defines a title for the document</td>
+    </tr>
+    <tr>
+      <td>&lt;tr&gt;</td>
+      <td>Defines a row in a table</td>
+    </tr>
+    <tr>
+      <td>&lt;track&gt;</td>
+      <td>Specifies text tracks for a media element</td>
+    </tr>
+    <tr>
+      <td>&lt;u&gt;</td>
+      <td>Applies the underline effect on a text body</td>
+    </tr>
+    <tr>
+      <td>&lt;ul&gt;</td>
+      <td>Creates an unordered list</td>
+    </tr>
+    <tr>
+      <td>&lt;var&gt;</td>
+      <td>Specifies a variable</td>
+    </tr>
+    <tr>
+      <td>&lt;video&gt;</td>
+      <td>Includes video in the document</td>
+    </tr>
+    <tr>
+      <td>&lt;wbr&gt;</td>
+      <td>Defines a possible line-break</td>
+    </tr>
+</table>
+${buttonSection('JavaScript', 'Attribute List')}
+  `
+})
