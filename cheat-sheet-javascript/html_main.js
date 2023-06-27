@@ -446,18 +446,41 @@ ${buttonSection('List Tags', 'Media')}
 `})
 
 
-const tagTypes3 = document.querySelector('.tagTypes3')
-tagTypes3.addEventListener('click', ()=>{
-context.innerHTML =`<h1>Text Decoration Tags</h1>
-<h2>Bold tag</h2>
-<p>The are used to apply the bold effect to text. Commonly, to make words stand out in a large body of text. </p>
-<p>Structure: < b> text < /b></p>
-<h2>Italic Tag</h2>
-<p>It is used to apply the italic effect to text. Commonly, to turn words in the italic formal in a large body of text.</p>
-<p>Structure: < i> text < /i></p>
-<h2>Underline Tag</h2>
-<p>It is used to underline to text. Commonly, to underline specific text withing a larger text body.</p>
-<p>Structure: < u> text < /u>  </p>`})
+const movingF3 = document.querySelector('.movingF3')
+movingF3.addEventListener('click', ()=>{
+context.innerHTML =`
+<h1>Media Tags</h1>
+<p>The media tags include in the document images, videos, sound etc.</p>
+<h2>Image tag:</h2>
+<p>
+    The image tag (img) inserts images to the webpage. It uses the search (src) attribute to determine the location of the image. The location can be a file path or a URL address on the web.
+    <br /><br />
+    It is a self-closing tag, often, the alternative (alt) attribute is included in the tag that displays text in the case that the image does not load. The img tag can utilize other attributes like height and width to adjust the image’s size. However, changing the appearance of an elelement directly with HTML it’s uncommon and usually not the best practice.
+</p>
+<p><b>Structure:</b> &lt;img src="file-path-or-URL" alt="alternative message" /&gt;</p>
+<h2>Usage example:</h2>
+<h2>Video tag:</h2>
+<p>
+    The video tag inserts videos to the website. It uses the src attribute to determine the location of the video file. The location can be a file path or a URL address on the web.
+    <br /><br />
+    It can also include useful attributes on it like controls (adds pause button, full screen etc. to the video), autoplay muted, which causes the video to play automatically when the page load (while muted), loop, causing the video replay once it’s over.
+</p>
+<p><b>Structure:</b> &lt;video src="file-path-or-URL" controls/&gt;&lt;/video&gt;</p>
+<h2>Usage example:</h2>
+<h2>Audio tag:</h2>
+<p>
+    The audio tag can insert audio files to the website. It uses the src attribute to determine the location of the audio file. The location can be a file path or a URL address on the web. It is used with the controls attribute.
+    <br /><br />
+    Audio can include other attributes, such as loop.
+</p>
+<p><b>Structure:</b> &lt;audio src="file-path-or-URL" controls/&gt;&lt;/audio&gt;</p>
+<h2>Source tag:</h2>
+<p>
+    The source tag is used within other media tags (video, audio), to specify alternative media sources. It is a self-closing tag. For more stable code, it can take the type attribute to specify the type of the media and it’s suffix.
+</p>
+<h2>Usage example:</h2>
+${buttonSection('Linking Tags', 'Input & Forms')}
+`})
 
 const tagTypes4 = document.querySelector('.tagTypes4')
 tagTypes4.addEventListener('click', ()=>{
