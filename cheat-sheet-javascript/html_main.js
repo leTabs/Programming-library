@@ -482,21 +482,103 @@ context.innerHTML =`
 ${buttonSection('Linking Tags', 'Input & Forms')}
 `})
 
-const tagTypes4 = document.querySelector('.tagTypes4')
-tagTypes4.addEventListener('click', ()=>{
+const movingF4 = document.querySelector('.movingF4')
+movingF4.addEventListener('click', ()=>{
 context.innerHTML =`
-<h1>List Tag</h1>
+<h1>Input & Forms</h1>
 <p>
-    List tags create lists of contexts. <br />
-    There are two kinds of lists:
+    HTML forms are the components that allow data to be submitted by the user to the website.  The data could be text, numbers, choices from a list etc. The form element is created with the form tag (&lt;form&gt;&lt;/form&gt;), and input tags (&lt;input /&gt;). The form tag includes necessary attributes. 
+    <br /><br />
+    Those are:
 </p>
-<ol>
-    <li>Ordered (each item is indexed), defined by the < ol>< /ol> tag</li>
-    <li>Unordered (the items are not indexed),  defined by the < ul>< /ul>.</li>
-</ol>
-<p>
-    Inside the list, each item is specified with list item tag < li>< /li>, therefore, a list is a combination of two types tags.
-</p>
+<ul>
+    <li>The action attribute: which defines the URL address or the file (and file-path) that handles the submission of the form (calculations, storing, manipulating the data etc.).</li>
+    <li>The method attribute: which defines how the data is send (“GET”, “POST”, etc.)</li>
+</ul>
+<p>The input tags are responsible for providing a way for specifying the data that will be send.</p>
+<h2>Attributes for Inputs</h2>
+<table>
+    <tr>
+      <th>Attribute</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>type</td>
+      <td>Determines the type of input that is utilized.</td>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td>Defines the name of the input, utilized by a programming language after the form’s submission for the input’s identification.</td>
+    </tr>
+    <tr>
+      <td>value</td>
+      <td>Sets an initial value for the input.</td>
+    </tr>
+    <tr>
+      <td>required</td>
+      <td>Prevents the form to be submitted unless the input is completed.</td>
+    </tr>
+    <tr>
+      <td>min &amp; max</td>
+      <td>Those two specify a minimum and maximum length of the input respectively.</td>
+    </tr>
+    <tr>
+      <td>placeholder</td>
+      <td>Displays a value to the input before anything is entered into it, without being an actual value.</td>
+    </tr>
+  </table>
+  <h2>Common Input types:</h2>
+  <table>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>text</td>
+      <td>Accepts character data in a single line of text.</td>
+    </tr>
+    <tr>
+      <td>password</td>
+      <td>Every character that is inserted gets displayed as a dot.</td>
+    </tr>
+    <tr>
+      <td>number</td>
+      <td>Accepts only numerical input.</td>
+    </tr>
+    <tr>
+      <td>checkbox</td>
+      <td>The user can choose more than one option from a list of options.</td>
+    </tr>
+    <tr>
+      <td>radio</td>
+      <td>The user can choose a single option from a list of options.</td>
+    </tr>
+    <tr>
+      <td>select</td>
+      <td>Creates a dropdown menu of options.</td>
+    </tr>
+    <tr>
+      <td>textarea</td>
+      <td>Accepts character data in a multiline text.</td>
+    </tr>
+    <tr>
+      <td>email</td>
+      <td>Accepts input with email characteristics.</td>
+    </tr>
+  </table>
+  <h2>Label tag:</h2>
+  <p>
+    The label tag is used to add descriptions to input elements. Takes the for attribute to associate itself with a specific input tag, the value of the for attribute should be the input’s value of the id attribute.
+  </p>              
+  <h2>Usage example:</h2>
+  <h2>The “submit” input type:</h2>
+  <p>
+    A form is submitted by an input or a button, both of the type “submit”.
+    <br /><br />
+    Typically, when a form is submitted, the data are sent to a server to be processed. Technologies like Python, Node.js and PHP can handle the data. They can manipulate the data, filter them, store them into a database, send it elsewhere etc.
+  </p>
+  <h2>Usage example:</h2>
+  ${buttonSection('Media', 'Tables')}
 `})
 
 const tagTypes5 = document.querySelector('.tagTypes5')
