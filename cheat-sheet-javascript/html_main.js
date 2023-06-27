@@ -581,19 +581,66 @@ context.innerHTML =`
   ${buttonSection('Media', 'Tables')}
 `})
 
-const tagTypes5 = document.querySelector('.tagTypes5')
-tagTypes5.addEventListener('click', ()=>{
+const movingF5 = document.querySelector('.movingF5')
+movingF5.addEventListener('click', ()=>{
 context.innerHTML =`
-<h1> Linking Tags</h1>
-<p>Link Tags reference the URL address of a website, a position with the website or the position of a file.</p>
-<h2>Anchor Tags</h2>
-<p>Anchor tags: The are used to navigate the user to a different website by referencing the URL address of the website of interest as a value to the “href” attribute. Or to navigate the user to a specific part of the website by referencing the id value of the element of interest as a value to the “href” attribute.</p>
-<p>Note: the anchor tag does not work without the “href” attribute and can nest other elements inside them or text, functioning as descriptions.</p>
-<h2>Link tags</h2>
-<p>Link tags: The are used to reference the file path or location of a file that is included in the webpage, also specifies the relationship of that file. The link tag works by including the “href” and “rel” attributes.
-    The link tag is placed in the head portion of the web page. 
-    Link it a self-losing tag.
-    </p>`})
+<h1>HTML Tables</h1>
+<p>
+    HTML tables are used to display organized data on the webpage. They consist of columns and rows. They are created with the table tag (&lt;table&gt;&lt;/table&gt;), which nests other tabular tags.
+</p>
+<h2>Table tags:</h2>
+<table>
+    <tr>
+      <th>Tag</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>&lt;tr&gt;</td>
+      <td>Creates a row in the table.</td>
+    </tr>
+    <tr>
+      <td>&lt;td&gt;</td>
+      <td>Creates a data cell in the table.</td>
+    </tr>
+    <tr>
+      <td>&lt;th&gt;</td>
+      <td>Creates the header cell of the table.</td>
+    </tr>
+    <tr>
+      <td>&lt;thead&gt;</td>
+      <td>Groups the header content.</td>
+    </tr>
+    <tr>
+      <td>&lt;tbody&gt;</td>
+      <td>Groups the body content.</td>
+    </tr>
+    <tr>
+      <td>&lt;tfoot&gt;</td>
+      <td>Groups the footer content.</td>
+    </tr>
+  </table>
+<h2>Attributes:</h2>
+<table>
+    <tr>
+      <th>Attribute</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>colspan</td>
+      <td>Defines the number of columns of a cell.</td>
+    </tr>
+    <tr>
+      <td>rowspan</td>
+      <td>Defines the number of rows of a cell.</td>
+    </tr>
+    <tr>
+      <td>scope</td>
+      <td>Defines the scope of a &lt;th&gt; element in relation to the table structure.</td>
+    </tr>
+  </table>              
+<h2>Usage example:</h2>
+${buttonSection('Input & Forms', 'Semantic HTML')}
+`})
 
 const tagTypes6 = document.querySelector('.tagTypes6')
 tagTypes6.addEventListener('click', ()=>{
