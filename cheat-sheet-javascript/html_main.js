@@ -781,4 +781,27 @@ context.innerHTML =`
 ${buttonSection('APIs','JavaScript')}
 `})
 const additionaly2 = document.querySelector('.additionaly2')
-additionaly2.addEventListener('click', ()=>{})
+additionaly2.addEventListener('click', ()=>{
+  context.innerHTML = `
+  <h1>JavaScript</h1>
+  <p>
+      JavaScript is a programming language, commonly used with HTML to make webpages interactive by adding functionality to the tags and elements.
+      <br /><br />
+      JavaScript code is implemented in HTML with the script tag (&lt;script&gt;&lt;/script&gt;) in two ways.
+  </p>
+  <p>
+      <span class="paragraph-space"></span>
+      1.	By writing the JavaScript code inside the script tag.
+  </p>
+  <h2>Usage example:</h2>
+  <p>
+      <span class="paragraph-space"></span>
+      2.	By referencing a JavaScript file to the HTML inside the opening script tag.
+  </p>
+  <h2>Usage example:</h2>
+  <p>
+      <b>Note:</b>: Because JavaScript usually will consider the existence of certain tags on the document, the tags need to be already created and accessible by JavaScript, in other words, the JavaScript code needs to be placed after all the necessary HTML code that will utilize. Therefore, it is a standard practice to include the JavaScript at the bottom of the HTML document, to avoid errors.
+  </p>
+  ${buttonSection('CSS','Tag List')}
+  `
+})
