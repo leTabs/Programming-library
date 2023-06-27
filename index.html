@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cheat Sheet Library|Home</title>
     <link href="static/styleCheatSheet.css" rel="stylesheet" />
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
     <nav>
         <p>leTabs</p>
-
         <div class="nav-links">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
@@ -26,7 +30,9 @@
             <p>Welcome to my programming resource hub! <br />
                 Cheat sheets and algorithms made easy. <br />
                 Dive in and excel in coding! Happy learning!</p>
-            <a href="#about"><button>Continue</button></a>
+            <a href="#about">
+                <button>Continue</button>
+            </a>
         </section>
         <section class="explanation" id="about">
             <h2>The website</h2>
@@ -45,11 +51,11 @@
             <h2>Cheat Sheets</h2>
             <div class="concept-wrapper">
                 <div>
-                    <button>HTML</button>
+                    <button class="btn-html">HTML</button>
                     <button>CSS</button>
                     <button>JavaScript</button>
                     <button>TypeScript</button>
-                    <button>Python</button>
+                    <button class="btn-python">Python</button>
                     <button>SQL</button>
                     <button>APIs</button>
                     <button>Networking</button>
@@ -63,6 +69,6 @@
         </section>
     </main>
 </body> 
-<!-- <script src="main.js" rel="text"></script> -->
+<script src="main.js" rel="text"></script>
 </html>
 
