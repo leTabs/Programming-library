@@ -809,6 +809,7 @@ additionaly2.addEventListener('click', ()=>{
 const library0 = document.querySelector('.library0')
 library0.addEventListener('click', ()=>{
   context.innerHTML = `
+  <h1>HTML Tags List</h1>
   <table>
   <tr>
     <th>Tag</th>
@@ -1234,3 +1235,117 @@ library0.addEventListener('click', ()=>{
 ${buttonSection('JavaScript', 'Attribute List')}
   `
 })
+
+const library2 = document.querySelector('.library2')
+library2.addEventListener('click', ()=>{
+context.innerHTML = `
+<h1>HTML Entities List</h1>
+<table>
+    <tr>
+      <th>Output</th>
+      <th>Description</th>
+      <th>Entity</th>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>Non-breaking space</td>
+      <td>&amp;nbsp;</td>
+    </tr>
+    <tr>
+      <td>&lt;</td>
+      <td>Less than</td>
+      <td>&amp;lt;</td>
+    </tr>
+    <tr>
+      <td>&gt;</td>
+      <td>Greater than</td>
+      <td>&amp;gt;</td>
+    </tr>
+    <tr>
+      <td>&amp;</td>
+      <td>Ampersand</td>
+      <td>&amp;amp;</td>
+    </tr>
+    <tr>
+      <td>&quot;</td>
+      <td>Double quote</td>
+      <td>&amp;quot;</td>
+    </tr>
+    <tr>
+      <td>&apos;</td>
+      <td>Single quote</td>
+      <td>&amp;apos;</td>
+    </tr>
+    <tr>
+      <td>&cent;</td>
+      <td>Cents</td>
+      <td>&amp;cent;</td>
+    </tr>
+    <tr>
+      <td>&pound;</td>
+      <td>Pound</td>
+      <td>&amp;pound;</td>
+    </tr>
+    <tr>
+      <td>&yen;</td>
+      <td>Yen</td>
+      <td>&amp;yen;</td>
+    </tr>
+    <tr>
+      <td>&euro;</td>
+      <td>Euro</td>
+      <td>&amp;euro;</td>
+    </tr>
+    <tr>
+      <td>&copy;</td>
+      <td>Copyright</td>
+      <td>&amp;copy;</td>
+    </tr>
+    <tr>
+      <td>&reg;</td>
+      <td>Registered mark</td>
+      <td>&amp;reg;</td>
+    </tr>
+    <tr>
+      <td>a&#768;</td>
+      <td>à</td>
+      <td>a&amp;#768;</td>
+    </tr>
+    <tr>
+      <td>a&#769;</td>
+      <td>á</td>
+      <td>a&amp;#769;</td>
+    </tr>
+    <tr>
+      <td>a&#770;</td>
+      <td>â</td>
+      <td>a&amp;#770;</td>
+    </tr>
+    <tr>
+      <td>a&#771;</td>
+      <td>ã</td>
+      <td>a&amp;#771;</td>
+    </tr>
+    <tr>
+      <td>O&#768;</td>
+      <td>Ò</td>
+      <td>O&amp;#768;</td>
+    </tr>
+    <tr>
+      <td>O&#769;</td>
+      <td>Ó</td>
+      <td>O&amp;#769;</td>
+    </tr>
+    <tr>
+      <td>O&#770;</td>
+      <td>Ô</td>
+      <td>O&amp;#770;</td>
+    </tr>
+    <tr>
+      <td>O&#771;</td>
+      <td>Õ</td>
+      <td>O&amp;#771;</td>
+    </tr>
+  </table>
+  ${buttonSection('Attributes List', 'Match Patterns')}
+`})
