@@ -691,6 +691,20 @@ context.innerHTML =`
 <h2>Usage example:</h2>
 ${buttonSection('Tables', 'File Paths')}
 `})
+const movingF7 = document.querySelector('.movingF7')
+movingF7.addEventListener('click', ()=>{
+  context.innerHTML = `
+  <h1>File Paths</h1>
+  <p>
+      Files paths references the location of a file in a system’s memory.
+      <br /><br />
+      In HTML, they are used to allow the website to access files, such as images, videos, CSS files to style the website etc.
+      <br /><br />
+      <b>Note:</b> while referencing a file on a directory, the file extension is included.
+  </p>
+  ${buttonSection('Semantic HTML', 'Entities')}
+  `
+})
 const fni = document.querySelector('.fni')
 fni.addEventListener('click', ()=>{
     context.innerHTML = `
