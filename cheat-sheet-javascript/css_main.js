@@ -87,5 +87,34 @@ const buttonSection= function(previous, next){
         <br /><br />
         CSS defines how the elements of an HTML document are represented by the browser. It accomplishes that by altering the element’s size, color, position etc. as a property-value combination.
     </p>
-    ${buttonSection('Home', 'HTML Tags')}
+    ${buttonSection('Home', 'Selectors')}
     `})
+    document.querySelector('.basic0').addEventListener('click', ()=>{
+        context.innerHTML = `
+        <h1>Properties</h1>
+        <p>
+            The CSS language targets specific elements before applying changes to them. The targeting of the elements happens with the CSS selectors. A selector consists of a name and two curly braces (“{}”). The styling changes occur inside the curly braces as properties and values.
+            <br /><br />
+            The property and its value is associated with a colon (:) and the property-value pairs are separated with each other by semi-colons(;)
+        </p>
+        <p>
+            There are three main types of selectors:
+        </p>
+        <ol>
+            <li><b>Tag based:</b> the selector targets the elements of a specific type.</li>
+            <li><b>Class based:</b>the selector targets the elements of a specific class name of the elements. The class name is prefixed with a dot (.).</li>
+            <li><b>Id based:</b>the selector targets the elements of a specific id value of the element. The id is prefixed with a hash sign (#).</li>
+        </ol>
+        <p>
+            A selector can target more than one element during the selector definition (they separated by commas). The CSS styling changes that occur inside the curly braces will affect all the selected elements.
+        </p>
+        <p>
+            The * selector selects all the elements of the document.
+        </p>
+        <h2>Child elements:</h2>
+        <p>
+            A selector can target elements that are children of other elements by specifying the tag, class, or id of the child element, next to the parent element. 
+        </p>
+        ${buttonSection('Introduction', 'Properties')}
+        `
+    })
