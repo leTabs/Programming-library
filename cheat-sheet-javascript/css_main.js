@@ -91,7 +91,7 @@ const buttonSection= function(previous, next){
     `})
     document.querySelector('.basic0').addEventListener('click', ()=>{
         context.innerHTML = `
-        <h1>Properties</h1>
+        <h1>Selectors</h1>
         <p>
             The CSS language targets specific elements before applying changes to them. The targeting of the elements happens with the CSS selectors. A selector consists of a name and two curly braces (“{}”). The styling changes occur inside the curly braces as properties and values.
             <br /><br />
@@ -118,3 +118,16 @@ const buttonSection= function(previous, next){
         ${buttonSection('Introduction', 'Properties')}
         `
     })
+    document.querySelector('.basic1').addEventListener('click', ()=>{  
+        context.innerHTML = 
+        `
+    <h1>Properties</h1>
+    <p>
+        A CSS property changes a characteristic of an element or multiple elements, the property references that characteristic with a keyword, the keyword usually hints the characteristic itself, and is assigned a value with a column, the value dictates the change.
+        <br /><br />
+        All property-value pairs end with e semi column and are placed inside the curly braces of the selector.
+    </p>
+    <p><b>Structure:</b> property: value ;</p>
+    ${buttonSection('Selectors','Unites')}
+    `}
+    )
