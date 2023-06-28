@@ -61,3 +61,31 @@ function list(){
     }
 }
 list()
+
+const buttonSection= function(previous, next){
+    return `<div class="container-btn">
+    <hr />
+    <button>
+        <i>Previous Page</i>
+        <br />
+        ${previous}
+    </button>
+    <button>
+        <i>Next Page</i>
+        <br />
+        ${next}
+    </button>
+    <hr />
+  </div>`
+  }
+
+  document.querySelector('.css_intro').addEventListener('click', ()=>{
+    context.innerHTML = `
+    <h1>What is CSS ?</h1>
+    <p> 
+        CSS stands for Cascading Style Sheets. it is the language used to manipulate the visual styling of web pages.
+        <br /><br />
+        CSS defines how the elements of an HTML document are represented by the browser. It accomplishes that by altering the element’s size, color, position etc. as a property-value combination.
+    </p>
+    ${buttonSection('Home', 'HTML Tags')}
+    `})
