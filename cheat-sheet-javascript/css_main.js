@@ -259,3 +259,27 @@ document.querySelector('.basic2').addEventListener('click', ()=>{
         ${buttonSection('Properties', 'Text')}
     `
 })
+document.querySelector('.cummonP0').addEventListener('click',()=>{
+    context.innerHTML = `
+    <h1>Text</h1>
+    <p>The text properties are applied to elements that can hold text.</p>
+    <h2>Color:</h2>
+    <p>It specifies the foreground color of text. The color property can have the following values:</p>
+    <p>
+        <b>Keywords:</b> they are statements that represent pre-defined colors (red, green etc.)<br /><br />
+        <b>Structure: </b>color: purple; <br /><br />
+
+        <b>Hexidecimal Notation: </b>represents a combination of red, green, and blue, ranged from 00 to FF and prefixed with a # (#00FF34, what color).<br /><br />
+        <b>Structure: </b>color: #FF3490; <br /><br />
+        <b>RGB Notation: </b>the rgb() notation defines colors by the intensity of red, green and blue components using decimal values from 0 t0 255. (rgb(124, 44, 00)). <br /><br />
+        <b>Structure: </b>color: rgb(123, 32, 99); <br /><br />
+        <b>RGBA Notation: </b>similar to the RGB notation, however specifies an additional value for the alpha channel, representing the opacity of the color, ranged for 0 to 1 (0 = transparent fully, 1= visible fully), (rgba(0, 34, 255, 0.5)). <br /><br />
+        <b>Structure: </b>color: rgb(123, 55, 00, 0.7) <br /><br />
+        <b>HSL Notation: </b>the hsl() notation represents colors using the hue saturation and lightness values. The hue value is specified in degrees (0 - 360) and the saturation and lightness by percentages (0% - 100%) , hsl(210, 50%, 50%). <br /><br />
+        <b>Structure: </b>color: hsl(210, 50%, 50%); <br /><br />
+        <b>HSLA Notation:</b>similar to the HSL Notation , however specifies an additional value of the alpha (hsla(120, 34%, 35%, 0.7)).<br /><br />
+        <b>Structure: </b> color: hsla(120, 34%, 35%, 0.7);<br /><br />
+    </p>
+    ${buttonSection('Units', 'Box Model')}
+    `
+})
