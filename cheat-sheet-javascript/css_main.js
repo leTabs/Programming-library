@@ -339,6 +339,8 @@ document.querySelector('.cummonP0').addEventListener('click',()=>{
       <li>numbers with accompanying units, such as 14px, 2rem etc.</li>
       <li>keywords, such as large, x-large, xx-large, small, medium, x-small</li>    
     </ol>
+    <h2>Font Weight</h2>
+    <p>The font-weight property specifies the thickness or boldness of text withing an element. The values of the property are keywords, such as: normal, bolder, lighter, and numeric values in the range 100-900 the lower the number the lighter the weight representation and the higher the bolder the wight representation.</p>
     ${buttonSection('Units', 'Box Model')}
     `
 })
