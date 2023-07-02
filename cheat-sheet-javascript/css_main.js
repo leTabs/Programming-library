@@ -341,6 +341,8 @@ document.querySelector('.cummonP0').addEventListener('click',()=>{
     </ol>
     <h2>Font Weight</h2>
     <p>The font-weight property specifies the thickness or boldness of text withing an element. The values of the property are keywords, such as: normal, bolder, lighter, and numeric values in the range 100-900 the lower the number the lighter the weight representation and the higher the bolder the wight representation.</p>
+    <h2>Font Style</h2>
+    <p>The font-style property specifically alters the text withing an element to be displayed as normal, italic, or oblique. The value of the property is “normal”, “italic” and “oblique” respectively, they can accept additional values such as the degrees angle (60deg) or other keywords, such as upright etc.</p>
     ${buttonSection('Units', 'Box Model')}
     `
 })
