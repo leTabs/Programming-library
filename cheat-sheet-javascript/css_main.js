@@ -61,7 +61,7 @@ function list(){
     }
 }
 list()
-
+ 
 const buttonSection= function(previous, next){
     return `<div class="container-btn">
     <hr />
@@ -105,16 +105,49 @@ const buttonSection= function(previous, next){
             <li><b>Class based:</b>the selector targets the elements of a specific class name of the elements. The class name is prefixed with a dot (.).</li>
             <li><b>Id based:</b>the selector targets the elements of a specific id value of the element. The id is prefixed with a hash sign (#).</li>
         </ol>
-        <p>
-            A selector can target more than one element during the selector definition (they separated by commas). The CSS styling changes that occur inside the curly braces will affect all the selected elements.
-        </p>
-        <p>
-            The * selector selects all the elements of the document.
-        </p>
-        <h2>Child elements:</h2>
-        <p>
-            A selector can target elements that are children of other elements by specifying the tag, class, or id of the child element, next to the parent element. 
-        </p>
+        <h2>More complex Selectors</h2>
+        <ol>
+            <li>A selector can target more than one element during the selector definition (they are separated by commas). The CSS styling changes that occur inside the curly braces will affect all the selected elements.</li>
+            <li>The * selector selects all the elements of the document.</li>
+            <li>Child elements: A selector can target elements that are children of other elements by specifying the child element after the parent element (separated by space).</li>
+            <li>The > character specifies that the child elements are only for one layer of nesting.</li>
+            <li>The + character specifies that the child elements are immediately after the parent element.</li>
+            <li>Tag of class: A selector can target tags of a specific class, by specifying the tag and connecting with the class name with a dot.</li>
+            <li>Tag of id: A selector can target tags of a specific id, by specifying the tag and connecting with the id name with a # </li>
+            <li>Tag with attribute: A selector can target tags that include a specific attribute, by specifying the tag followed by a pair of square braces, the attribute name is specified inside the braces.</li>
+        </ol>
+        <p> Additionally, inside on the attribute definition, the value of the attribute can be specified (as one of many)</p>
+        <h2>Attribute Selectors:</h2>
+        <table>
+            <tr>
+              <th>Markup</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>Tag[attribute]</td>
+              <td>Selects the elements of that tag that include the attribute</td>
+            </tr>
+            <tr>
+              <td>Tag[attribute="value"]</td>
+              <td>Selects the tags that have the attribute with the specified value</td>
+            </tr>
+            <tr>
+              <td>Tag[attribute~="value"]</td>
+              <td>Selects the tags that contain the specified value as one of the attribute's values</td>
+            </tr>
+            <tr>
+              <td>Tag[attribute^="value"]</td>
+              <td>Selects the tags that have the attribute value starting with the specified value</td>
+            </tr>
+            <tr>
+              <td>Tag[attribute*="value"]</td>
+              <td>Selects the tags that have the attribute value containing the specified value</td>
+            </tr>
+            <tr>
+              <td>Tag[attribute$="value"]</td>
+              <td>Selects the tags that have the attribute value ending with the specified value</td>
+            </tr>
+          </table>
         ${buttonSection('Introduction', 'Properties')}
         `
     })
