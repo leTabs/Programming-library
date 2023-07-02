@@ -329,6 +329,16 @@ document.querySelector('.cummonP0').addEventListener('click',()=>{
       <li>fanta</li>
     </ol>
     <p><b>Note:</b>CSS can utilize fonts that are installed on the user’s device. By using “system-ui” value followed by a fallback list of generic font families.</p>
+    <h2>Font Size</h2>
+    <p>
+      The font-size property changes the size of text withing an element. 
+      <br /><br />
+      The property’s values are:
+    </p>
+    <ol>
+      <li>numbers with accompanying units, such as 14px, 2rem etc.</li>
+      <li>keywords, such as large, x-large, xx-large, small, medium, x-small</li>    
+    </ol>
     ${buttonSection('Units', 'Box Model')}
     `
 })
