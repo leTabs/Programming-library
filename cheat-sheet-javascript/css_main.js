@@ -313,6 +313,22 @@ document.querySelector('.cummonP0').addEventListener('click',()=>{
         <b>HSLA Notation:</b>similar to the HSL Notation , however specifies an additional value of the alpha (hsla(120, 34%, 35%, 0.7)).<br /><br />
         <b>Structure: </b> color: hsla(120, 34%, 35%, 0.7);<br /><br />
     </p>
+    <h2>Font Family</h2>
+    <p>
+      The font-family property specifies the typeface of text that is included in an element. The value could be a specific typeface, or a list of typefaces separated by commas. The rest of the typefaces act as fallback choices.
+      <br /><br />
+      If a font family name contains spaces, it is enclosed in double quotes.
+      <br /><br />
+      Generic font families: css provides several generic font families that represent a category of style of fonts, those are:
+    </p>
+    <ol>
+      <li>serif</li>
+      <li>sans-serif</li>
+      <li>monospace</li>
+      <li>cursive/li>
+      <li>fanta</li>
+    </ol>
+    <p><b>Note:</b>CSS can utilize fonts that are installed on the user’s device. By using “system-ui” value followed by a fallback list of generic font families.</p>
     ${buttonSection('Units', 'Box Model')}
     `
 })
